@@ -94,7 +94,7 @@
     "type": "COMESTIBLE",
     "comestible_type": "MED",
     "name": { "str": "Full-body Nano-Cleanser" },
-    "description": "DEBUGThis euphemistically named serum is an incredibly potent payload of nanites. It's designed to detect and interface with a sufficiently roboticized user's bionics and replace the few parts of them that are still human. Note: Most CBM's do not count towards this threshold, only a sufficient amount of PCBM's have the mass and nanite-hives to complete this process.",
+    "description": "DEBUG YOU SHOULDNT SEE THISThis euphemistically named serum is an incredibly potent payload of nanites. It's designed to detect and interface with a sufficiently roboticized user's bionics and replace the few parts of them that are still human. Note: Most CBM's do not count towards this threshold, only a sufficient amount of PCBM's have the mass and nanite-hives to complete this process.",
     "weight": "80 g",
     "volume": "10 ml",
     "price": "20000 USD",
@@ -108,7 +108,7 @@
      "effects" : [
         {   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   }
     ] },
-    "flags": [ "NPC_SAFE", "CANT_HEAL_EVERYONE", "INEDIBLE" ]
+    "flags": [ "NPC_SAFE", "CANT_HEAL_EVERYONE", "INEDIBLE", "TRADER_AVOID" ]
 
 },
   
@@ -184,15 +184,16 @@
     "copy-from": "fake_item",
     "type": "TOOL",
     "name": { "str": "mechadendrite toolset" },
-    "flags": [ "TRADER_AVOID" ],
+    "flags": [ "TRADER_AVOID","DURABLE_LOCKPICK", "USES_BIONIC_POWER" ],
     "max_charges": 10000,
-    "use_action": [ "HAMMER", "CROWBAR", "PICK_LOCK" ],
+    "use_action": [ "CROWBAR", "PICK_LOCK" ],
     "qualities": [
-      [ "SAW_M_FINE", 4 ],
-      [ "WRENCH_FINE", 4 ],
-      [ "PULL", 4 ],
-      [ "SCREW_FINE", 4 ],
-      [ "DRILL", 6 ],
+      [ "SAW_M_FINE", 2 ],
+      [ "WRENCH_FINE", 2 ],
+	  [ "PRY", 2],
+      [ "PULL", 2 ],
+      [ "SCREW_FINE", 2 ],
+      [ "DRILL", 3 ],
 	  [ "LOCKPICK", 5 ]
     ]
   }

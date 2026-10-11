@@ -581,7 +581,7 @@
   },    
 	  {
     "type": "recipe",
-    "result": "pcbm_paws_n_claws",
+    "result": "pcbm_sprint",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_CBMS",
     "skill_used": "electronics",

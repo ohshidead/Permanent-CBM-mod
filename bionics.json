@@ -7,7 +7,7 @@
     "copy-from": "bionic_general",
     "type": "BIONIC_ITEM",
     "name": { "str": "Facial Replacement - Extended PCBM" }, 
-    "description": "A full polymer replacement face, this one looks somewhat like a muzzle. Originally developed from cosmetic surgery technology, this permanent CBM has been upgraded and modified to be resistant to damage as well as a limited ability to protect against poisons and other airborne hazards.",
+    "description": "A full polymer replacement face, this one looks somewhat like a muzzle. Originally developed from cosmetic surgery technology, this permanent CBM has been upgraded and modified to be resistant to damage as well as a limited ability to protect against poisons and other airborne hazards. A Face PCBM from the Paragen line",
     "price": "12000 USD",
     "difficulty": 9
   },
@@ -72,7 +72,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Facial Replacement PCBM" }, 
-    "description": "A full polymer replacement face, this one looks somewhat like a mask or helmet. Originally developed from cosmetic surgery technology, this permanent CBM has been upgraded and modified to resistant to damage as well as a limited ability to protect against poisons and other airborne hazards. This blank visage is rather intimidating. The user's organic features are mostly intact unless otherwise modified.",
+    "description": "A full polymer replacement face, this one looks somewhat like a mask or helmet. Originally developed from cosmetic surgery technology, this permanent CBM has been upgraded and modified to resistant to damage as well as a limited ability to protect against poisons and other airborne hazards. This blank visage is rather intimidating. The user's organic features are mostly intact unless otherwise modified. A Face PCBM from the Rev line",
     "price": "12000 USD",
     "difficulty": 9
   },
@@ -103,7 +103,7 @@
       {
     "type": "mutation",
     "id": "pcbm_face2",
-    "name": { "str": "Really Nice Robot Face" },
+    "name": { "str": "Nice Robot Face" },
     "points": 1,
     "valid": false,
 	"purifiable": false,
@@ -123,7 +123,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Digital Antennae PCBM" } ,
-    "description": "This set of full-ear replacement antennae are integrated directly into the user's nervous system; providing a small host of analysis and detection tools, notably the ability to sense the enviroment around you even in pitch blackness.",
+    "description": "This set of full-ear replacement antennae are integrated directly into the user's nervous system; providing a small host of analysis and detection tools, notably the ability to sense the enviroment around you even in pitch blackness. A Ear PCBM from the Paragen line",
     "price": "12000 USD",
     "difficulty": 7
   },
@@ -136,7 +136,7 @@
     "cut_protec": [ [ "head", 2 ]],
 	"stat_bonus": [ [ "PER", 2 ] ],
 	"enchantments": [ "PCBM_ANTENNAE" ],
-	"canceled_mutations": [ "HEADBUMPS", "ANTENNAE", "HORNS", "HORNS_CURLED", "HORNS_POINTED", "ANTLERS", "PCBM_headsup" ],
+	"canceled_mutations": [ "PCBM_headsup", "FELINE_EARS", "LUPINE_EARS", "ELFA_EARS", "RABBIT_EARS", "MOUSE_EARS", "URSINE_EARS", "CANINE_EARS" ],
     "flags": [ "BIONIC_SHOCKPROOF"  ],
 	"can_uninstall": false,
     "no_uninstall_reason": "The device has replaced a large amount of bone and wired directly into the brain.",  
@@ -169,7 +169,7 @@
     "visibility": 6,
     "ugliness": -2,
     "description": "You have a pair of robotic antennae in the shape of canid ears. They are soft to the touch, but rigid enough to be a pain for wearing things.",
-    "types": [ "HORNS" ],
+    "types": [ "EARS" ],
     "category": [ "ROBOT" ],
 	"mixed_effect": true,
     "restricts_gear": [ "head" ],
@@ -185,7 +185,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Digital Headset PCBM" } ,
-    "description": "Despite looking like a clunky set of headphones; this PCBM is a full ear replacement; being embeded right into the users cranium. This not only allows for enhanced hearing, but also a limited ability to wirelessly interface into certain technology.",
+    "description": "Despite looking like a clunky set of headphones; this PCBM is a full ear replacement; being embeded right into the users cranium. This not only allows for enhanced hearing, but also a limited ability to wirelessly interface into certain technology. A Ear PCBM from the Rev line",
     "price": "12000 USD",
     "difficulty": 7
   },
@@ -198,7 +198,7 @@
     "cut_protec": [ [ "head", 2 ]],
 	"stat_bonus": [ [ "PER", 2 ] ],
 	"enchantments": [ "PCBM_headsup" ],
-	"canceled_mutations": [ "HEADBUMPS", "ANTENNAE", "HORNS", "HORNS_CURLED", "HORNS_POINTED", "ANTLERS", "PCBM_ANTENNAE" ],
+	"canceled_mutations": ["PCBM_ANTENNAE", "FELINE_EARS", "LUPINE_EARS", "ELFA_EARS", "RABBIT_EARS", "MOUSE_EARS", "URSINE_EARS", "CANINE_EARS" ],
 	"can_uninstall": false,
     "no_uninstall_reason": "The device has replaced a large amount of bone and wired directly into the brain.", 
     "flags": [ "BIONIC_SHOCKPROOF"  ],
@@ -221,7 +221,7 @@
     "visibility": 6,
     "ugliness": -2,
     "description": "A professional looking set of embedded electronic equipment; may look like worn headgear, but you can wiggle the antennae if you try hard enough!",
-    "types": [ "HORNS" ],
+    "types": [ "EARS" ],
     "category": [ "ROBOT" ],
 	"mixed_effect": true,
     "restricts_gear": [ "head" ],
@@ -238,7 +238,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Bionic Chestplate PCBM" }, 
-    "description": "This PCBM is more than a shell or superficial armour plate, it's a complete full torso replacement. Bones, ligaments and of course flesh have been replaced with a honeycomb network of reinforcements and nanite-maintained metal.",
+    "description": "This PCBM is more than a shell or superficial armour plate, it's a complete full torso replacement. Bones, ligaments and of course flesh have been replaced with a honeycomb network of reinforcements and nanite-maintained metal. A Chest PCBM from the Paragen line",
     "price": "12000 USD",
     "difficulty": 13
   },
@@ -301,7 +301,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Bio-Kinetic Chestwraps PCBM" }, 
-    "description": "A PCBM with two parts, one an internal set of supports and braces and an exterior counterpart of straps, these are useful for resisting some damage, especially blunt damage, but also it can be used to generate power by torsion.",
+    "description": "A PCBM with two parts, one an internal set of supports and braces and an exterior counterpart of straps, these are useful for resisting some damage, especially blunt damage, but also it can be used to generate power by torsion. A Chest PCBM from the Rev line",
     "price": "12000 USD",
     "difficulty": 13
   },
@@ -351,7 +351,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Metal Fur Coat PCBM" }, 
-    "description": "A near full body covering of alloyed hair with subdermal circuitry, while it doesn't actively do much, it's a useful support system for other bionics and other bio-mechanical integrations. Protects against wet and provides a small trickle of power while in sunlight.",
+    "description": "A near full body covering of alloyed hair with subdermal circuitry, while it doesn't actively do much, it's a useful support system for other bionics and other bio-mechanical integrations. Protects against wet and provides a small trickle of power while in sunlight. A Skin PCBM from the Paragen line",
     "price": "12000 USD",
     "difficulty": 12
   },
@@ -412,7 +412,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Poly-Metal Weave PCBM" }, 
-    "description": "A complete dermal overwrite that lends the user flexibility, protection and a certain air of uniqueness.",
+    "description": "A complete dermal overwrite that lends the user flexibility, protection and a certain air of uniqueness. A Skin PCBM from the Rev line",
     "price": "12000 USD",
     "difficulty": 12
   },
@@ -471,7 +471,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Claw-Hand PCBM" },
-    "description": "Advertised for it's weapon utility, nonetheless this PCBM converts the lower forearms and hands into what is clearly a paw-like configuration. Fortunately they retain most of their previous dexterity while being significantly tougher.",
+    "description": "Advertised for it's weapon utility, nonetheless this PCBM converts the lower forearms and hands into what is clearly a paw-like configuration. Fortunately they retain most of their previous dexterity while being significantly tougher. A Hand PCBM from the Paragen line",
     "price": "12000 USD",
     "difficulty": 12
   },
@@ -537,7 +537,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Ferro-Touch Hands PCBM" },
-    "description": "Portrayed as ferromagnetic, these hands are actually a kind of polymer, capable of being reshaped into a few preset configurations, these tough yet delicate hand/forearm replacements are great for the engineer and crafter.",
+    "description": "Portrayed as ferromagnetic, these hands are actually a kind of polymer, capable of being reshaped into a few preset configurations, these tough yet delicate hand/forearm replacements are great for the engineer and crafter. A Hand PCBM from the Rev line",
     "price": "12000 USD",
     "difficulty": 12
   },
@@ -590,7 +590,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Upper Limb Polymer Coating PCBM" },
-    "description": "Despite it's name this bionic is more of a replacement system for the upper portion of a persons limbs and connective joints, as one might expect from a PCBM. This bionic can lead some decent support and strength to a persons body, but is considered more of an intermediate connector between limb and torso replacements.",
+    "description": "Despite it's name this bionic is more of a replacement system for the upper portion of a persons limbs and connective joints, as one might expect from a PCBM. This bionic can lead some decent support and strength to a persons body, but is considered more of an intermediate connector between limb and torso replacements. A Arm and Leg PCBM from the Paragen line",
     "price": "12000 USD",
     "difficulty": 10
   },
@@ -670,7 +670,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Digital-grade Legs PCBM" },
-    "description": "A digitigrade Lower-Leg replacement PCBM that helps the user excel at all sorts of leg based movement, it's well protected too!",
+    "description": "A digitigrade Lower-Leg replacement PCBM that helps the user excel at all sorts of leg based movement, it's well protected too! A Foot PCBM from the Paragen line",
     "price": "12000 USD",
     "difficulty": 14
   },
@@ -738,7 +738,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Stalker Robo-Legs PCBM" },
-    "description": "Named for a popular book, these bionic legs are rated to handle anomalies, mutants and bandits. While not as fast as some leg variants, this PCBM is incredibly sturdy, making you stronger, faster and are excellent for climbing obstacles. ",
+    "description": "Named for a popular book, these bionic legs are rated to handle anomalies, mutants and bandits. While not as fast as some leg variants, this PCBM is incredibly sturdy, making you stronger, faster and are excellent for climbing obstacles. A Leg and Foot PCBM from the Rev line",
     "price": "12000 USD",
     "difficulty": 13
   },
@@ -800,7 +800,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Blade Monarch PCBM" },
-    "description": "These shoulder mounted blades are deeply intertwined with the users shoulders and upper arms, lending them an unparalled strike strength and intimidation factor.",
+    "description": "These shoulder mounted blades are deeply intertwined with the users shoulders and upper arms, lending them an unparalled strike strength and intimidation factor. A Arm PCBM from the Rev line",
     "price": "12000 USD",
     "difficulty": 14
   },
@@ -856,7 +856,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Electro-Static Tail PCBM" },
-    "description": "This simple seeming device is actually one of the more elaborate and sophisticated baseline PCBMs. Consisting of a bundle of prehensile smart fibres that constantly interact with the surrounding enviroment, gathering power from various electrical sources, from outlets to friction and static. Excess energy generated in combat can be used to shock foes.",
+    "description": "This simple seeming device is actually one of the more elaborate and sophisticated baseline PCBMs. Consisting of a bundle of prehensile smart fibres that constantly interact with the surrounding enviroment, gathering power from various electrical sources, from outlets to friction and static. Excess energy generated in combat can be used to shock foes. A Tail PCBM from the Paragen line",
     "price": "12000 USD",
     "difficulty": 14
   },
@@ -924,7 +924,7 @@
     "copy-from":"pcbm_face_snout",
     "type": "BIONIC_ITEM",
     "name": { "str": "Mechadendrite Tail PCBM" },
-    "description": "A simple but useful collection of precision tools mounted to an auxilary limb in the tailbone position, this PCBM is both practical and comfortable.",
+    "description": "A simple but useful collection of precision tools mounted to an auxilary limb in the tailbone position, this PCBM is both practical and comfortable. A Tail PCBM from the Rev line",
     "price": "10000 USD",
     "difficulty": 13
   },
@@ -937,7 +937,7 @@
 	"stat_bonus": [  [ "DEX", 1] ],
     "fake_item": "pcbm_toolset",
     "canceled_mutations": ["PCBM_Etail"],
-    "flags": [ "BIONIC_TOGGLED", "BIONIC_SHOCKPROOF" ],
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_SHOCKPROOF", "BIONIC_TOOLS", "BIONIC_SLEEP_FRIENDLY" ],
 	"can_uninstall": false,
     "no_uninstall_reason": "This tail is connected directly into the patients spine and would be unsafe to remove.", 
 	"enchantments": [ "PCBM_Ttail" ]
