@@ -1,0 +1,47 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "UNDEAD_PEOPLE",
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE_LEGACY"
+    ],
+    "tiles-new": [
+      {
+        "file": "pcbm_tileset.png",
+		"//": "range 1 to 48",
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": -1,
+        "tiles": [
+          { "id": ["overlay_mutation_pcbm_face_flat","overlay_worn_pcbm_flatface" ],"fg": 17, "rotates": false },
+          { "id": "overlay_mutation_pcbm_robo_ears", "fg": 2, "rotates": false },
+		  { "id": ["overlay_mutation_pcbm_face_snout","overlay_wielded_pcbm_snoutface"], "fg": 1, "rotates": false },
+		  { "id": "pcbm_face_snout" , "fg": 28,  "rotates": false },		  
+		  { "id": "overlay_mutation_pcbm_robo_fur", "fg": 3, "rotates": false },
+		  { "id": "overlay_mutation_pcbm_chestplate", "fg": 4, "rotates": false },
+		  { "id": "overlay_mutation_pcbm_robo_paws", "fg": 5, "rotates": false },		  
+		  { "id": "overlay_mutation_pcbm_robo_plastic", "fg": 6, "rotates": false },		  
+		  { "id": "overlay_mutation_pcbm_robo_digi", "fg": 7, "rotates": false },		  
+		  { "id": "overlay_mutation_pcbm_robo_tail", "fg": 8, "rotates": false },			  
+		  { "id": "overlay_mutation_pcbm_mech_wing", "fg": 9, "rotates": false },    		  	  
+		  { "id": "overlay_mutation_pcbm_Winged", "fg": 9, "rotates": false },  	  
+		  { "id": "pcbm_robo_Thresh", "fg": 12, "rotates": false },          		  	  
+		  { "id": "pcbm_mech_wing", "fg": 13, "rotates": false },          		  	  
+		  { "id": "pcbm_data_pred4", "fg": 15, "rotates": false },           		  	  
+		  { "id": "overlay_mutation_pcbm_robo_heads", "fg": 18, "rotates": false },           		  	  
+		  { "id": "overlay_mutation_pcbm_robo_skin", "fg": 19, "rotates": false },           		  	  
+		  { "id": "overlay_mutation_pcbm_wraps", "fg": 20, "rotates": false },           		  	  
+		  { "id": "overlay_mutation_pcbm_robo_hans", "fg": 21, "rotates": false },           		  	  
+		  { "id": "overlay_mutation_pcbm_robo_replika", "fg": 22, "rotates": false },           		  	  
+		  { "id": "overlay_mutation_pcbm_robo_spid", "fg": 23, "rotates": false },           		  	  
+		  { "id": "overlay_mutation_pcbm_robo_mecha", "fg": 24, "rotates": false },
+		  { "id": "overlay_wielded_pcbm_paws_n_claws", "fg": 29, "rotates": false },
+		  { "id": "overlay_wielded_pcbm_proclaimer", "fg": 30, "rotates": false }
+			]
+				
+      }
+                 ]
+  }
+]

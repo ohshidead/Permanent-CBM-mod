@@ -1,0 +1,201 @@
+ [
+
+  {
+    "id": "pcbm_flyer",
+    "type": "BOOK",
+    "name": { "str": "PCBM flyer" },
+    "description": "A flyer for some kind of bionics. A pair of robotic humanoids give a thumbs up while the sun rises in the background. \"Permanent Bionics - A New Dawn awaits us!\" \"No More parasites!\" The flyer goes on to specify the great feats that one will be capable of once they upgrade their body with these specialised bionics. It spends a lot of words downplaying how permanent they are and assures you that your new body parts will be comfortable and easy to repair, with  duct tape being enough to repair most (non-serious) wounds. In tiny text at the bottom of the back page is a disclaimer stating that mutagens have not been proven to fatally conflict with PCBM's but should be avoided nonetheless....",
+    "weight": "10 g",
+    "volume": "10 ml",
+    "price": "0 cent",
+    "material": [ "paper" ],
+    "symbol": "/",
+    "color": "cyan"
+  },
+
+   {
+    "id": "pcbm_repairkit",
+    "type": "TOOL",
+    "category": "tools_workshop",
+    "name": { "str": "PCBM Repair and Aid Kit" },
+    "description": "This kit is little more than some antiseptic and duct tape, yet is apparently all a PCBM needs to repair itself and the surrounding tissue. Not reccomended to use this on anything other than light injuries however...",
+    "weight": "100 g",
+    "volume": "500 ml",
+    "price": 1000,
+    "price_postapoc": 300,
+    "to_hit": -2,
+    "bashing": 1,
+    "material": [  "plastic" ],
+    "symbol": ";",
+    "color": "cyan",
+    "ammo": "tape",
+    "max_charges": 200,
+    "charges_per_use": 40,
+	"flags": [ "NO_INGEST", "CANT_HEAL_EVERYONE" ],
+    "use_action": { "type": "heal", "bandages_power": 8, "disinfectant_power": 4, "bite": 0.95, "bleed": 0.95, "move_cost": 400 }
+  },
+  
+    {
+    "id": "pcbm_nanoheal",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "PCBM Nano-Repair Powder" },
+    "description": "Contains all the raw materials a nanite repair hive needs to fix almost any malfunction or degradation. Only a fully cyberised Mechani has the systems to use this mixture.",
+    "weight": "200 g",
+    "volume": "300 ml",
+    "price": 200,
+    "price_postapoc": 2,
+    "material": [ "steel", "copper", "plastic" ],
+    "looks_like": "oxy_powder",
+    "symbol": "*",
+    "color": "cyan",
+    "charges": 5,
+    "stack_size": 15,
+    "healthy": 10,
+    "flags": [ "NO_INGEST", "CANT_HEAL_EVERYONE"],
+    "use_action": {
+      "type": "heal",
+      "bandages_power": 10,
+      "bleed": 1.0,
+      "disinfectant_power": 10,
+	  "bite": 1.0,
+      "move_cost": 400,
+      "limb_power": 6,
+      "head_power": 10,
+      "torso_power": 10,
+	  "limb_scaling" : 1.5,
+	  "head_scaling" : 1.4,
+	  "torso_scaling" : 1.4
+    }
+  },
+    {
+    "id": "pcbm_recipes",
+    "type": "BOOK",
+    "copy-from": "base_book",
+    "name": { "str": "Hand-written Instructions" },
+    "description": "This is a set of diagrams and instructions on how to build certain CBM's, but the rear half of the book is all written by hand...",
+    "weight": "2000 g",
+    "volume": "500 ml",
+    "price": "420 USD",
+    "price_postapoc": "20 USD",
+    "color": "cyan",
+    "skill": "electronics",
+    "required_level": 6,
+    "max_level": 9,
+    "intelligence": 12,
+    "time": "45 m",
+    "fun": 0
+  },
+  
+  
+  
+  {
+    "id": "iv_mutagen_robo",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "Full-body Nano-Cleanser" },
+    "description": "DEBUGThis euphemistically named serum is an incredibly potent payload of nanites. It's designed to detect and interface with a sufficiently roboticized user's bionics and replace the few parts of them that are still human. Note: Most CBM's do not count towards this threshold, only a sufficient amount of PCBM's have the mass and nanite-hives to complete this process.",
+    "weight": "80 g",
+    "volume": "10 ml",
+    "price": "20000 USD",
+    "price_postapoc": "50 USD",
+    "stack_size": 100,
+    "symbol": "!",
+    "charges": 1,
+    "color": "cyan",  "use_action" : {
+     "type" : "consume_drug",
+     "activation_message" : "You robot",
+     "effects" : [
+        {   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   },{   "id": "pcbm_robot_count",   "duration": 1   }
+    ] },
+    "flags": [ "NPC_SAFE", "CANT_HEAL_EVERYONE", "INEDIBLE" ]
+
+},
+  
+  {
+    "id": "pcbm_convert",
+    "type": "GUN",
+    "name": { "str": "Convert debug" },
+    "description": "-",
+    "color": "light_green",
+    "symbol": "!",
+    "skill": "rifle",
+    "range": 1,
+    "ranged_damage": { "damage_type": "heat", "amount": 0, "armor_penetration": 0 },
+    "dispersion": 0,
+    "sight_dispersion": 0,
+    "durability": 10,
+    "use_action": { "type": "cast_spell", "spell_id": "pcbm_fuelspell", "no_fail": true, "level": 0 },
+    "flags": [ "NEVER_JAMS", "NO_DROP", "TRADER_AVOID", "NON_FOULING", "NEEDS_NO_LUBE" ]
+  
+  },
+  
+  {
+    "id": "pcbm_convert_on",
+    "type": "GENERIC",
+    "name": { "str": "Cleanser debug" },
+    "description": "-",
+    "color": "light_green",
+    "symbol": "!",
+    "use_action": { "target": "pcbm_convert", "msg": "You stop it", "menu_text": "Deactivate", "type": "transform" }, 
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "intermittent_activation": { "effects": [ { "frequency": "5 seconds", "spell_effects": [ { "id": "pcbm_thresh_robo" } ] } ] }
+        }
+      ]
+    }
+     
+  },
+   {
+    "type": "COMESTIBLE",
+    "id": "pcbm_drunkchip",
+    "name": { "str_sp": "Drunkeness Emulation Program BMC" },
+    "weight": "5 g",
+    "color": "cyan",
+    "addiction_type": "alcohol",
+    "looks_like": "pcbm_data_pred4",
+    "stim": -12,
+    "comestible_type": "OTHER",
+    "symbol": ",",
+    "quench": 0,
+    "addiction_potential": 5,
+    "calories": 0,
+    "description": "BMC's are software that a Mechani can upload to manipulate their own behaviours and attitudes. Activating this will allow a modified computer virus to be let loose upon your systems. The damage it causes is minimal, mostly creating junk data, but for a Mechani this ends up producing a feeling much like drunkeness. Use in moderation.",
+    "price": "2 USD",
+    "price_postapoc": "15 cent",
+    "material": [ "plastic"],
+    "primary_material": "plastic",
+    "volume": "25 ml",
+    "charges": 5,  
+	"use_action": {
+      "type": "consume_drug",
+      "activation_message": "You upload a copy of the virus.",
+      "effects": [ { "id": "pcbm_drunk", "duration": 900 } ]
+    },
+    "flags": [ "UNSAFE_CONSUME", "NO_INGEST", "CANT_HEAL_EVERYONE" ],
+    "fun": 15
+  },
+  
+    {
+    "id": "pcbm_toolset",
+    "copy-from": "fake_item",
+    "type": "TOOL",
+    "name": { "str": "mechadendrite toolset" },
+    "flags": [ "TRADER_AVOID" ],
+    "max_charges": 10000,
+    "use_action": [ "HAMMER", "CROWBAR", "PICK_LOCK" ],
+    "qualities": [
+      [ "SAW_M_FINE", 4 ],
+      [ "WRENCH_FINE", 4 ],
+      [ "PULL", 4 ],
+      [ "SCREW_FINE", 4 ],
+      [ "DRILL", 6 ],
+	  [ "LOCKPICK", 5 ]
+    ]
+  }
+
+  
+  ]

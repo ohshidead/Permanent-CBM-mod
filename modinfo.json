@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "PCBM",
+    "name": "Permanent CBMs",
+    "description": "Adds some CBMs that are meant to act akin to a mutation threshold.",
+    "category": "items",
+    "dependencies": [ "bn" ]
+  }
+
+]

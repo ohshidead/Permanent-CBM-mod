@@ -1,0 +1,52 @@
+[
+  {
+    "type": "dream",
+    "messages": [
+      "A glittering waterfall of metal covers the mountain, something is trying to be said, but I can't hear it over the metal crashing.",
+      "The world is covered in a layer of ones and zeroes... wait this is just like that movie, you dream about that one actor you like...",
+      "You imagine a digital overlay, giving numbers and statistics. You pick up a spinning gold coin and turn to shoot a demon, high score!"
+    ],
+    "category": "ROBOT",
+    "strength": 1
+  },
+  {
+    "type": "dream",
+    "messages": [
+      "You dream the flesh is melting off your bones... but that's okay, you dance a little jig and your dream changes to be about skeletons dancing.",
+      "Typing on a computer, it feels like an eternity, cubicles stretch off into the dark, somethings bothering you... the cubicles vanish. Much better.",
+      "You restlessly flit from dream to dream, it's all so confusing and unorganised, you can't sleep like this! ZZZ..."
+    ],
+    "category": "ROBOT",
+    "strength": 2
+  },
+  {
+    "type": "dream",
+    "messages": [
+      "A monster looms over you. Delete. You're running low on ammo, Ctrl C, Ctrl V. You grow hungry and tired, Set Needs to Max.",
+      "You hammer your body, both the tool and the creation, you lift your arm and examine it. Perfect.",
+      "You hammer your body, both the tool and the creation, you lift your leg and examine it. Perfect.",
+      "You hammer your body, both the tool and the creation, you lift your torso and examine it. Excellent.",
+      "A nightmare. Rust. Decay. A surge of lightning. You can't even scream."
+    ],
+    "category": "ROBOT",
+    "strength": 3
+  },
+  {
+    "type": "dream",
+    "messages": [
+      "Run Dream.exe? N.",
+      "Calculating memory... ",
+      "Compiling... ",
+      "Compressing...",
+      "Defragmenting...",     
+	  "Run Dream.exe? N.",
+      "Calculating memory... ",
+      "Compiling... ",
+      "Compressing...",
+      "Defragmenting...",
+      "Run Dream.exe? Y. The sights and and sounds that fill your mind are something beyond what any mortal could imagine"
+    ],
+    "category": "ROBOT",
+    "strength": 4
+  }
+]

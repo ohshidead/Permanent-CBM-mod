@@ -1,0 +1,242 @@
+[
+ {
+    "id": "bionics",
+    "type": "item_group",
+    "items": [
+      [ "pcbm_face_snout", 10 ],
+      [ "pcbm_face_flat", 10 ],
+      [ "pcbm_robo_ears", 10 ],
+      [ "pcbm_robo_heads", 10 ],
+      [ "pcbm_chestplate", 10 ],
+      [ "pcbm_wraps", 10 ],
+      [ "pcbm_robo_fur", 10 ],
+      [ "pcbm_robo_skin", 10 ],
+      [ "pcbm_robo_plastic", 10 ],
+      [ "pcbm_robo_replika", 10 ],
+      [ "pcbm_robo_paws", 10 ],
+      [ "pcbm_robo_hans", 10 ],
+      [ "pcbm_robo_digi", 10 ],
+      [ "pcbm_robo_spid", 10 ],
+      [ "pcbm_robo_tail", 10 ],
+      [ "pcbm_robo_mecha", 10 ],
+      [ "pcbm_robo_Thresh", 10 ],
+      [ "pcbm_sprint", 10 ],
+	  [ "pcbm_runner", 10 ],
+      [ "pcbm_mech_wing", 10 ],
+      [ "pcbm_mech_brain", 10 ],
+      [ "pcbm_mech_organs", 10 ],
+      [ "pcbm_data_psych", 10 ],
+      [ "pcbm_data_spirit", 10 ],
+      [ "pcbm_data_int", 10 ]
+    ]
+  },
+
+  {
+    "type": "item_group",
+    "id": "bionics_common",
+    "items": [
+      [ "pcbm_face_snout", 8 ],
+      [ "pcbm_face_flat", 8 ],
+      [ "pcbm_robo_ears", 10 ],
+      [ "pcbm_robo_heads", 10 ]
+    ]
+  },
+  
+  {
+    "type": "item_group",
+    "id": "bionics_survivalist",
+    "items": [
+
+      [ "pcbm_robo_tail", 10 ],
+      [ "pcbm_robo_mecha", 10 ],	  
+      [ "pcbm_sprint", 10 ], 
+	  [ "pcbm_runner", 10 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_mil",
+    "items": [
+	
+      [ "pcbm_chestplate", 5 ],
+      [ "pcbm_wraps", 10 ],
+      [ "pcbm_robo_fur", 5 ],
+      [ "pcbm_robo_skin", 10 ],
+      [ "pcbm_robo_tail", 5 ],
+      [ "pcbm_robo_mecha", 10 ]
+    ]
+  },
+  
+  {
+    "type": "item_group",
+    "id": "bionics_heavy_mil",
+    "items": [
+      [ "pcbm_chestplate", 10 ],
+      [ "pcbm_wraps", 10 ],
+      [ "pcbm_robo_fur", 10 ],
+      [ "pcbm_robo_skin", 10 ],
+      [ "pcbm_robo_tail", 10 ],
+      [ "pcbm_robo_mecha", 10 ],
+      [ "pcbm_mech_wing", 5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_op",
+    "items": [
+      [ "pcbm_chestplate", 10 ],
+      [ "pcbm_wraps", 10 ],
+      [ "pcbm_robo_fur", 10 ],
+      [ "pcbm_robo_skin", 10 ],
+      [ "pcbm_robo_tail", 10 ],
+      [ "pcbm_robo_mecha", 10 ],
+      [ "pcbm_mech_wing", 5 ]
+
+    ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "bionics_tech",
+    "items": [
+
+      [ "pcbm_robo_tail", 10 ],
+      [ "pcbm_robo_mecha", 10 ],
+      [ "pcbm_robo_ears", 10 ],
+      [ "pcbm_robo_heads", 10 ]
+    ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "bionics_sci",
+    "items": [
+      [ "pcbm_face_snout", 10 ],
+      [ "pcbm_face_flat", 10 ],
+      [ "pcbm_robo_ears", 10 ],
+      [ "pcbm_robo_heads", 10 ],
+      [ "pcbm_chestplate", 10 ],
+      [ "pcbm_wraps", 10 ],
+      [ "pcbm_robo_fur", 10 ],
+      [ "pcbm_robo_skin", 10 ],
+      [ "pcbm_robo_plastic", 10 ],
+      [ "pcbm_robo_replika", 10 ],
+      [ "pcbm_robo_paws", 10 ],
+      [ "pcbm_robo_hans", 10 ],
+      [ "pcbm_robo_digi", 10 ],
+      [ "pcbm_robo_spid", 10 ],
+      [ "pcbm_robo_tail", 10 ],
+      [ "pcbm_robo_mecha", 10 ],
+      [ "pcbm_robo_Thresh", 5 ],
+      [ "pcbm_sprint", 10 ],
+	  [ "pcbm_runner", 10 ],
+      [ "pcbm_mech_wing", 5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bionics_bank_vault",
+    "items": [
+      [ "pcbm_face_snout", 10 ],
+      [ "pcbm_face_flat", 10 ],
+      [ "pcbm_robo_ears", 10 ],
+      [ "pcbm_robo_heads", 10 ],
+      [ "pcbm_chestplate", 10 ],
+      [ "pcbm_wraps", 10 ],
+      [ "pcbm_robo_fur", 10 ],
+      [ "pcbm_robo_skin", 10 ],
+      [ "pcbm_robo_plastic", 10 ],
+      [ "pcbm_robo_replika", 10 ],
+      [ "pcbm_robo_paws", 10 ],
+      [ "pcbm_robo_hans", 10 ],
+      [ "pcbm_robo_digi", 10 ],
+      [ "pcbm_robo_spid", 10 ],
+      [ "pcbm_robo_tail", 10 ],
+      [ "pcbm_robo_mecha", 10 ],
+      [ "pcbm_robo_Thresh", 5 ],
+      [ "pcbm_sprint", 10 ],
+	  [ "pcbm_runner", 10 ],
+      [ "pcbm_mech_wing", 5 ],
+      [ "pcbm_mech_brain", 5 ],
+      [ "pcbm_mech_organs", 5 ]
+    ]
+  },
+    {
+    "type": "item_group",
+    "id": "house_safe_misc",
+    "items": [
+
+      [ "pcbm_face_snout", 3 ],
+      [ "pcbm_robo_ears", 3 ],
+      [ "pcbm_chestplate", 3 ],
+      [ "pcbm_robo_fur", 3 ],
+      [ "pcbm_robo_plastic", 3 ],
+      [ "pcbm_robo_paws", 3 ],
+      [ "pcbm_robo_digi", 3 ],
+      [ "pcbm_robo_tail", 3 ]
+    ]
+  },
+    {
+    "id": "office_paper",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "pcbm_flyer", "count": [ 1, 1 ], "prob": 2 }
+    ]
+  },
+    {
+    "id": "tools_general",
+    "type": "item_group",
+    "items": [
+
+      [ "pcbm_repairkit", 2 ]
+    ]
+  },
+    {
+    "id": "tools_electronics",
+    "type": "item_group",
+    "items": [
+
+      [ "pcbm_repairkit", 1 ]
+    ]
+  },
+    {
+    "id": "tools_mechanic",
+    "type": "item_group",
+    "items": [
+
+      [ "pcbm_repairkit", 1 ]
+    ]
+  },
+  {
+    "id": "tools_medical",
+    "type": "item_group",
+    "items": [
+
+      [ "pcbm_repairkit", 1 ]
+    ]
+  },
+  {
+    "id": "lab_bookshelves",
+    "type": "item_group",
+    "items": [
+      { "item": "pcbm_recipes", "prob": 5 }
+    ]
+  },
+  {
+    "id": "mansion_books",
+    "type": "item_group",
+    "items": [
+
+      { "item": "pcbm_recipes", "prob": 5 }
+    ]
+  },
+  {
+    "id": "exotic_books",
+    "type": "item_group",
+    "items": [
+
+      { "item": "pcbm_recipes", "prob": 5 }
+    ]
+  }
+]

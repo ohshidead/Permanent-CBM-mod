@@ -1,0 +1,181 @@
+[
+
+
+ {
+    "type": "SPELL",
+    "id": "pcbm_thresh_robo",
+    "name": { "str": "Permanently Upgrade" },
+	"effect": "mutate",
+	"effect_str": "THRESH_ROBOT",
+    "description": "hopefully no crash",
+    "message": "robutt",
+    "min_damage": 1,
+    "max_damage": 1,
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "NO_FAIL", "MUTATE_TRAIT"  ],
+    "valid_targets": [ "self" ]
+  }, 
+  
+  {
+    "type": "SPELL",
+    "id": "pcbm_fuelspell",
+    "name": { "str": "Food to Fuel" },
+	"base_casting_time": 100,
+	"effect": "recover_energy",
+	"effect_str": "BIONIC" ,
+    "description": "Turns KJ and Thirst into Bionic",
+    "message": "With a faint gurgling your food capacitors drain and you register a surge of bionic power.",
+    "min_damage": 500,
+    "max_damage": 500,
+    "flags": [ "NO_EXPLOSION_VFX", "SILENT", "NO_FAIL" ],
+    "valid_targets": [ "self" ]
+  }, 
+  
+  {
+    "type": "effect_type",
+    "id": "pcbm_drainfood",
+    "name": ["drainfood" ],	
+	"base_mods" : {
+    "hunger_amount": [1000],
+	"hunger_min": [1000],
+	"thirst_amount": [150],
+    "thirst_min": [150]
+      }
+  },
+
+
+
+
+
+  {   "type": "enchantment",
+    "id": "pcbm_robot_transform",
+	"has": "WIELD",
+    "intermittent_activation": { "effects": [ { "frequency": "5 seconds", "spell_effects": [ { "id": "pcbm_thresh_robo" } ] } ] }
+
+  },
+
+
+
+
+{   "type": "effect_type",
+    "id": "pcbm_part_robot",
+    "name": [ "PCBM Integrated System" ],
+    "desc": [ "Your biology no longer counts as fully human, with metal overtaking flesh and nanites replacing white blood cells. You can no longer suffer from parasitic effects nor mutate from toxins." ],
+    "removes_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts", "mutating", "rat" ],
+	"resist_traits": [ "THRESH_MARLOSS", "THRESH_MYCUS" ]
+},
+
+
+{   "type": "effect_type",
+    "id": "pcbm_nosleep",
+    "desc": [ "you shouldnt see this" ],   
+	"removes_effects": [ "bleed", "frostbite", "drunk", "hypovitA", "hypovitB", "hypervitaminosis", "narcosis", "scurvy", "anemia", "hypocalcemia" ],
+	"base_mods": { "sleepdebt_amount": [-999],
+      "sleepdebt_min": [ -999 ],
+      "sleepdebt_tick": [ 5 ],
+	  "hunger_chance":  [ 1],
+	  "hunger_tick": [9999],
+	  "health_min_val": [50],
+	  "health_max_val": [50],
+	  "health_amount" : [50]
+    }
+},
+
+{   "type": "effect_type",
+    "id": "pcbm_nottired",
+    "desc": [ "you shouldnt see this" ],   
+	"base_mods": { "fatigue_amount": [-10],
+      "fatigue_min": [ -10 ],
+      "fatigue_tick": [ 5 ]
+    }
+},
+
+
+
+{   "type": "effect_type",
+    "id": "pcbm_mech_brained",
+    "name": [ "Digital mind" ],
+    "desc": [ "Nothing affects your consciousness that you do not will to." ],
+    "removes_effects": [  "deaf", "stunned", "dazed", "relax_gas", "shakes", "formication", "visuals", "motor_seizure", "datura" ]
+},
+  {
+    "type": "effect_type",
+    "id": "pcbm_gofaster",
+    "name": [ "Quadruped Speed" ],
+    "desc": [ "Your body is shaped for speed, the laws of physics stretching to keep you on the ground" ],
+	"apply_message": "Everything goes dark for a moment as artificial material covers you.",
+    "remove_message": "Your electromagnets finish powering down and your speed returns to normal.",
+    "rating": "good",
+    "base_mods": {
+      "speed_mod": [ 75 ],
+      "stamina_min": [ 5 ],
+      "stamina_tick": [ 2 ]
+    }
+  },
+
+  {
+    "type": "effect_type",
+    "id": "pcbm_golong",
+    "name": [ "Enduring Speed" ],
+    "desc": [ "Your body is currently built for an marathon run, keep pounding the ground!" ],
+	"apply_message": "You are surrounded by warmth and darkness before quickly adjusting to a new shape.",
+    "remove_message": "With a hiss your coverings collapse back into their containment modules.",
+    "rating": "good",
+    "base_mods": {
+      "speed_mod": [ 20 ],
+      "stamina_min": [ 50 ],
+      "stamina_tick": [ 2 ]
+    }
+  },
+
+
+{   "type": "effect_type",
+    "id": "pcbm_mech_organic",
+    "name": [ "Inorganic" ],
+    "desc": [ "Your non-biological form shrugs off many effects such as venom and bleeding." ],
+    "removes_effects": [ "blind", "paralyzepoison", "deaf", "stung", "poison", "badpoison", "venom_dmg", "venom_weaken", "foodpoison", "tpollen", "nausea", "smoke", "teargas", "bite", "infected", "migo_atmosphere"  ]
+},
+  
+  {
+    "type": "effect_type",
+    "id": "pcbm_drunk",
+    "name": [ "Tip.sy", "D:>run_k", "Recycling Binned", "Error:balance not found", ":(" ],
+    "desc": [
+      "With a fizz across your circuits, your program does it's work",
+      "You've stepped up the access permissions for your program",
+      "You don't need to set these to read only right?",
+      "HaHaHaHa runtime:error: Loop detected",
+      "Your Player Character has ran into a problem and needs to restart."
+    ],
+    "max_intensity": 5,
+    "apply_message": "You feel lightheaded.",
+    "int_dur_factor": "100 m",
+    "miss_messages": [ [ "Your targeting system's flicker over ghostly images", 1 ] ],
+    "morale": "morale_drunk",
+    "base_mods": {
+      "str_mod": [ 1 ],
+      "sleep_chance": [ -1003 ],
+      "sleep_min": [ 15000 ],
+      "sleep_max": [ 21000 ],
+      "pkill_amount": [ 3 ],
+      "pkill_max_val": [ 3 ],
+      "pkill_min": [ 1 ],
+      "pkill_tick": [ 45 ],
+      "morale": [ 5 ]
+    },
+    "scaling_mods": {
+      "str_mod": [ -0.33 ],
+      "per_mod": [ -1 ],
+      "dex_mod": [ -1 ],
+      "int_mod": [ -1.42 ],
+      "pkill_max_val": [ 10 ],
+      "pkill_tick": [ -10 ],
+      "sleep_chance": [ 501 ],
+      "morale": [ 10 ]
+    },
+    "blood_analysis_description": "VIRUS DETECTED"
+  }
+  
+  
+  
+  
+]

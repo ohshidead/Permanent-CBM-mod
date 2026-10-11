@@ -1,0 +1,52 @@
+[
+  {
+    "type": "overlay_order",
+    "overlay_ordering": [
+      {
+        "id": [
+          "pcbm_face_snout",
+		  "pcbm_robo_paws",
+		  "pcbm_robo_hans",
+		  "pcbm_paws_n_claws",
+		  "pcbm_face_flat"
+        ],
+        "order": 8000
+      },
+	  {
+        "id": [
+		  "pcbm_glow",
+		  "pcbm_robo_ears",
+		  "pcbm_robo_heads"
+        ],
+        "order": 9000
+      },
+	        {
+        "id": [
+          "pcbm_robo_tail",
+		  "pcbm_robo_mecha",
+		  "pcbm_mech_wing"
+        ],
+        "order": 1000
+      },
+	        {
+        "id": [
+          "pcbm_robo_plastic",
+		  "pcbm_robo_digi",	
+		  "pcbm_face2",
+		  "pcbm_robo_skin"
+        ],
+        "order": 2000
+      },
+      {
+        "id": [
+		
+				"pcbm_robo_spid",
+		       "pcbm_robo_fur",
+				"pcbm_chestplate"	,
+				"pcbm_wraps"
+				],
+        "order": 4500
+      }
+    ]
+  }
+]

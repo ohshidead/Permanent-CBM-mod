@@ -1,0 +1,1495 @@
+[
+
+
+
+  {
+    "id": "pcbm_face_snout",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Facial Replacement - Extended PCBM" }, 
+    "description": "A full polymer replacement face, this one looks somewhat like a muzzle. Originally developed from cosmetic surgery technology, this permanent CBM has been upgraded and modified to be resistant to damage as well as a limited ability to protect against poisons and other airborne hazards.",
+    "price": "12000 USD",
+    "difficulty": 9
+  },
+  {
+    "id": "pcbm_face_snout",
+    "type": "bionic",
+    "name": { "str": "Facial Replacement - Extended " },
+    "description": "Provides 3 bash, 10 cut protection, and 8 ballistic protection and 3 enviromental proteciton to the eyes, head and mouth, not to mention the cute smile that people like and trust.",
+    "occupied_bodyparts": [ [ "head", 1 ], [ "mouth", 1 ] ],
+	"env_protec": [ [ "mouth", 3 ], ["eyes", 3], [ "head", 3 ]],
+    "bash_protec": [ [ "head", 3 ], [ "mouth", 3 ], ["eyes", 3] ],
+    "cut_protec": [ [ "head", 10 ], [ "mouth", 10 ], ["eyes", 10] ],
+    "bullet_protec": [ [ "head", 8 ], [ "mouth", 8 ], ["eyes", 8] ],
+	"canceled_mutations": [ "SNOUT", "BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MINOTAUR", "MUZZLE", "MUZZLE_BEAR", "MUZZLE_LONG", "MUZZLE_RAT","SLIT_NOSTRILS","pcbm_face2" ],
+    "flags": [ "BIONIC_SHOCKPROOF" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "A large portion of the skull, along with teeth, flesh and skin have been removed, replacing that is beyond you.",  
+    "included_bionics": ["pcbm_face_holder"],
+    "enchantments": [ "PCBM_TEST" ]
+  },
+  {
+    "id": "pcbm_face_holder",
+    "type": "bionic",
+    "name": { "str": "ΩFace Converted" },
+    "description": "Front of head is mostly machine, enjoy! This is just a marker.",
+    "included": true,
+	"can_uninstall": false,
+    "no_uninstall_reason": "This is just a placeholder.", 
+    "flags": [ "BIONIC_SHOCKPROOF", "TRADER_AVOID" ]
+  },
+  
+  {
+    "type": "enchantment",
+    "id": "PCBM_TEST",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+    "condition": "ALWAYS",
+	"mutations": [ "pcbm_face1" ]
+  },
+
+  
+    {
+    "type": "mutation",
+    "id": "pcbm_face1",
+    "name": { "str": "Tough Robot Muzzle" },
+    "points": 1,
+    "valid": false,
+	"purifiable": false,
+    "description": "The flesh and some amount of bone and cartilage have been replaced with a lightweight polymer of steel and plastic. An otherwise hidden mouth can be opened for eating and drinking, but otherwise is not necessary for talking and respiration.",
+    "player_display": true,
+	"restricts_gear": ["EYES", "MOUTH" ],
+	"types": [ "MUZZLE" ],
+    "category": [ "ROBOT" ],
+	"allow_soft_gear" : true,
+	"mixed_effect": true,
+    "social_modifiers": { "persuade": 10 },
+    "visibility": 2,
+    "ugliness": -1
+  },
+  
+   {
+    "id": "pcbm_face_flat",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Facial Replacement PCBM" }, 
+    "description": "A full polymer replacement face, this one looks somewhat like a mask or helmet. Originally developed from cosmetic surgery technology, this permanent CBM has been upgraded and modified to resistant to damage as well as a limited ability to protect against poisons and other airborne hazards. This blank visage is rather intimidating. The user's organic features are mostly intact unless otherwise modified.",
+    "price": "12000 USD",
+    "difficulty": 9
+  },
+  {
+    "id": "pcbm_face_flat",
+    "type": "bionic",
+    "name": { "str": "Facial Replacement" },
+    "description": " Provides 2 bash, 6 cut protection, and 6 ballistic protection and 3 enviromental proteciton to the eyes, head and mouth. People tend to be intimidated by it.",
+    "occupied_bodyparts": [ [ "head", 1 ], [ "mouth", 1 ] ],
+	"env_protec": [ [ "mouth", 3 ], ["eyes", 3], [ "head", 3 ]],
+    "bash_protec": [ [ "head", 2 ], [ "mouth", 2 ], ["eyes", 2] ],
+    "cut_protec": [ [ "head", 6 ], [ "mouth", 6 ], ["eyes", 6] ],
+    "bullet_protec": [ [ "head", 6 ], [ "mouth", 6 ], ["eyes", 6] ],
+	"canceled_mutations": [ "SNOUT", "BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MINOTAUR", "MUZZLE", "MUZZLE_BEAR", "MUZZLE_LONG", "MUZZLE_RAT", "SLIT_NOSTRILS", "pcbm_face1" ],
+	"enchantments": [ "pcbm_face2" ],
+    "included_bionics": ["pcbm_face_holder"],
+	"can_uninstall": false,
+    "no_uninstall_reason": "A large portion of the skull, along with teeth, flesh and skin have been removed, replacing that is beyond you.",  
+    "flags": [ "BIONIC_SHOCKPROOF" ]
+  },
+    {
+    "type": "enchantment",
+    "id": "pcbm_face2",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+    "condition": "ALWAYS",
+	"mutations": [ "pcbm_face2" ]
+  },
+      {
+    "type": "mutation",
+    "id": "pcbm_face2",
+    "name": { "str": "Really Nice Robot Face" },
+    "points": 1,
+    "valid": false,
+	"purifiable": false,
+    "description": "The flesh and some amount of bone and cartilage have been replaced with a lightweight polymer of steel and plastic. An otherwise hidden mouth can be opened for eating and drinking, but otherwise is not necessary for talking and respiration.",
+    "player_display": true,
+	"restricts_gear": ["MOUTH" ],
+    "types": [ "MUZZLE" ],
+    "category": [ "ROBOT" ],
+	"mixed_effect": true,
+    "visibility": 2,
+    "ugliness": 0,
+    "social_modifiers": { "persuade": -10, "intimidate": 20 }
+  },
+  
+     {
+    "id": "pcbm_robo_ears",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Digital Antennae PCBM" } ,
+    "description": "This set of full-ear replacement antennae are integrated directly into the user's nervous system; providing a small host of analysis and detection tools, notably the ability to sense the enviroment around you even in pitch blackness.",
+    "price": "12000 USD",
+    "difficulty": 7
+  },
+  {
+    "id": "pcbm_robo_ears",
+    "type": "bionic",
+    "name": { "str": "Digital Antennae" },
+    "description": "Metal ears that give a +2 bonus to Perception, minor night vision and a small bonus to hearing. Prevents wearing headgear that isn't made of fabric.",
+    "occupied_bodyparts": [ [ "head", 1 ]],
+    "cut_protec": [ [ "head", 2 ]],
+	"stat_bonus": [ [ "PER", 2 ] ],
+	"enchantments": [ "PCBM_ANTENNAE" ],
+	"canceled_mutations": [ "HEADBUMPS", "ANTENNAE", "HORNS", "HORNS_CURLED", "HORNS_POINTED", "ANTLERS", "PCBM_headsup" ],
+    "flags": [ "BIONIC_SHOCKPROOF"  ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "The device has replaced a large amount of bone and wired directly into the brain.",  
+    "included_bionics": ["pcbm_ears_holder"]
+  },
+  
+  {
+    "id": "pcbm_ears_holder",
+    "type": "bionic",
+    "name": { "str": "ΩEars Replaced." },
+    "description": "Your ears aren't made of flesh any more. This is just a marker.",
+    "included": true,
+	"can_uninstall": false,
+    "no_uninstall_reason": "This is just a placeholder.",
+    "flags": [ "BIONIC_SHOCKPROOF", "TRADER_AVOID"  ]
+  },
+  
+      {
+    "type": "enchantment",
+    "id": "PCBM_ANTENNAE",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_ANTENNAE" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_ANTENNAE",
+    "name": { "str": "Digital Antennae" },
+    "points": 1,
+    "visibility": 6,
+    "ugliness": -2,
+    "description": "You have a pair of robotic antennae in the shape of canid ears. They are soft to the touch, but rigid enough to be a pain for wearing things.",
+    "types": [ "HORNS" ],
+    "category": [ "ROBOT" ],
+	"mixed_effect": true,
+    "restricts_gear": [ "head" ],
+    "allow_soft_gear": true,
+	"valid": false,
+	"purifiable": false,
+    "night_vision_range": 2,
+	"hearing_modifier": 1.25
+  },
+  
+     {
+    "id": "pcbm_robo_heads",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Digital Headset PCBM" } ,
+    "description": "Despite looking like a clunky set of headphones; this PCBM is a full ear replacement; being embeded right into the users cranium. This not only allows for enhanced hearing, but also a limited ability to wirelessly interface into certain technology.",
+    "price": "12000 USD",
+    "difficulty": 7
+  },
+  {
+    "id": "pcbm_robo_heads",
+    "type": "bionic",
+    "name": { "str": "Digital Headset" },
+    "description": "Your bionic ears are sensitive to all sorts of signals, electronic and other wise. You get a bonus to Perception, hearing, computers and a slight bonus to intimidation but it does make wearing things on your head hard.",
+    "occupied_bodyparts": [ [ "head", 1 ]],
+    "cut_protec": [ [ "head", 2 ]],
+	"stat_bonus": [ [ "PER", 2 ] ],
+	"enchantments": [ "PCBM_headsup" ],
+	"canceled_mutations": [ "HEADBUMPS", "ANTENNAE", "HORNS", "HORNS_CURLED", "HORNS_POINTED", "ANTLERS", "PCBM_ANTENNAE" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "The device has replaced a large amount of bone and wired directly into the brain.", 
+    "flags": [ "BIONIC_SHOCKPROOF"  ],
+    "included_bionics": ["pcbm_ears_holder"]
+  },
+  
+  
+      {
+    "type": "enchantment",
+    "id": "PCBM_headsup",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_headsup" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_headsup",
+    "name": { "str": "Digital Headpiece" },
+    "points": 1,
+    "visibility": 6,
+    "ugliness": -2,
+    "description": "A professional looking set of embedded electronic equipment; may look like worn headgear, but you can wiggle the antennae if you try hard enough!",
+    "types": [ "HORNS" ],
+    "category": [ "ROBOT" ],
+	"mixed_effect": true,
+    "restricts_gear": [ "head" ],
+	"craft_skill_bonus": [ [ "computer", 4 ] ], 
+	"valid": false,
+	"purifiable": false,
+	"hearing_modifier": 1.4,
+    "social_modifiers": { "intimidate": 10 },
+    "allow_soft_gear": true
+  },
+  
+       {
+    "id": "pcbm_chestplate",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Bionic Chestplate PCBM" }, 
+    "description": "This PCBM is more than a shell or superficial armour plate, it's a complete full torso replacement. Bones, ligaments and of course flesh have been replaced with a honeycomb network of reinforcements and nanite-maintained metal.",
+    "price": "12000 USD",
+    "difficulty": 13
+  },
+  {
+    "id": "pcbm_chestplate",
+    "type": "bionic",
+    "name": { "str": "Bionic Chestplate" },
+    "description": " Your torso is now mostly metal, giving 8 Enviromental protection, 45 Bash, 50 Cut and 60 Bullets protection. It's not so big so it doesn't prevent wearing any clothing, but any standard hard armour is just not made for your shape. At least the rain runs off nicely",
+    "occupied_bodyparts": [ [ "torso", 10 ]],
+	"env_protec": [ [ "torso", 8 ] ],
+    "bash_protec": [ [ "torso", 45 ] ],
+    "cut_protec": [ [ "torso", 50 ] ],
+    "bullet_protec": [ [ "torso", 60 ] ],
+	"enchantments": [ "PCBM_chesty" ],
+	"canceled_mutations": [ "LARGE", "HUGE", "LARGE_OK", "HUGE_OK", "SMALL", "SMALL_OK", "SMALL2", "SMALL2_OK", "PCBM_wrapped" ],
+    "flags": [ "BIONIC_SHOCKPROOF" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "There is no way to reverse the massive amount of changes to the patients torso.", 
+    "included_bionics": ["pcbm_chest_holder"]
+  },
+  
+  {
+    "id": "pcbm_chest_holder",
+    "type": "bionic",
+    "name": { "str": "ΩTorso Upgraded." },
+    "description": "You may not have flesh and blood abs anymore but they're far tougher now. This is just a marker.",
+    "included": true,
+	"can_uninstall": false,
+    "no_uninstall_reason": "This is just a placeholder.",
+    "flags": [ "BIONIC_SHOCKPROOF", "TRADER_AVOID"  ]
+  },
+  
+  {
+    "type": "enchantment",
+    "id": "PCBM_chesty",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_chest_mut"]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_chest_mut",
+    "name": { "str": "Solid Metal Chest" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "visibility": 6,
+    "ugliness": 2,
+    "description": "A smooth metal shell encases your torso and all the things within, what remains of your organs are in tidy, well protected pockets, surrounded with more metal than even your average gynoid would have. Stay away from MRI machines.",
+    "category": [ "ROBOT" ], 
+	 "types": [ "SIZE" ],
+	"mixed_effect": true,
+	"restricts_gear": ["torso" ],	
+    "allow_soft_gear": true,
+	"wet_protection": [ { "part": "torso", "ignored": 99 } ]
+  },
+  
+       {
+    "id": "pcbm_wraps",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Bio-Kinetic Chestwraps PCBM" }, 
+    "description": "A PCBM with two parts, one an internal set of supports and braces and an exterior counterpart of straps, these are useful for resisting some damage, especially blunt damage, but also it can be used to generate power by torsion.",
+    "price": "12000 USD",
+    "difficulty": 13
+  },
+  {
+    "id": "pcbm_wraps",
+    "type": "bionic",
+    "name": { "str": "Bio-Kinetic Chestwraps" },
+    "description": "Your body is crossed with polymer fibres that give 10 Cut and 3 Bullet protection with a flat 25% Blunt reduction of damage. Also gives you +3 Strength and +2 Dexterity. Activate to generator power from your muscles.",
+    "occupied_bodyparts": [ [ "torso", 5 ]],
+    "cut_protec": [ [ "torso", 10 ] ],
+    "bullet_protec": [ [ "torso", 3 ] ],
+	"fuel_options": [ "muscle" ],
+    "fuel_efficiency": 0.2,
+    "passive_fuel_efficiency": 0.01,
+	"enchantments": [ "PCBM_wrapped" ],
+	"canceled_mutations": ["PCBM_chest_mut" ],
+    "flags": [ "BIONIC_POWER_SOURCE", "BIONIC_SHOCKPROOF", "BIONIC_TOGGLED" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "The fibres are embedded deep and complexly throughout the torso, removing them would cause unfixable trauma.", 
+    "included_bionics": ["pcbm_chest_holder"]
+  },
+     {
+    "type": "enchantment",
+    "id": "PCBM_wrapped",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_wrapped"],
+	"values": [{ "value": "ITEM_ARMOR_BASH", "multiply": 0.75  }]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_wrapped",
+    "name": { "str": "Embedded Wraps" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "visibility": 2,
+    "ugliness": 1,
+    "description": "The flexible polymer threaded throughout your torso supports your muscles and and gives you kind of a Mad Max vibe if you wanna go shirtless.",
+    "passive_mods": { "str_mod": 3, "dex_mod": 2 },
+    "category": [ "ROBOT" ], 
+	"mixed_effect": true
+  }, 
+  
+  {
+    "id": "pcbm_robo_fur",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Metal Fur Coat PCBM" }, 
+    "description": "A near full body covering of alloyed hair with subdermal circuitry, while it doesn't actively do much, it's a useful support system for other bionics and other bio-mechanical integrations. Protects against wet and provides a small trickle of power while in sunlight.",
+    "price": "12000 USD",
+    "difficulty": 12
+  },
+  {
+    "id": "pcbm_robo_fur",
+    "type": "bionic",
+    "name": { "str": "Metal Fur Coat" },
+    "description": " This artificial fur generates energy from the sun and protects all body parts with 3 Bash protection. It also covers up your natural scent with the smell of ozone as ambient moisture crackles against it.",
+    "occupied_bodyparts": [ [ "torso", 2 ], [ "head", 1 ], [ "arm_l", 1 ], [ "arm_r", 1 ] ],
+	"fuel_options": [ "sunlight" ],
+    "fuel_efficiency": 1,
+    "time": 1,
+	"canceled_mutations":["BARK","BODYHAIR", "SKIN_ROUGH", "SCALES", "FEATHERS", "LIGHTFUR", "CHITIN", "THICK_SCALES", "SLEEK_SCALES", "PATCHSKIN1", "DOWN", "FUR", "URSINE_FUR", "LUPINE_FUR", "FELINE_FUR", "CHITIN_FUR", "RABBIT_FUR", "CHITIN2", "PATCHSKIN2", "LYNX_FUR", "CHITIN_FUR2", "CHITIN3", "SUBDERMALARMOR", "CHITIN_FUR3", "PCBM_skinned"],
+	"enchantments": [ "PCBM_furmut" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "The fur has replaced all remaining body hair and embedded itself deeply, the patient would bleed to death in seconds without weeks of careful surgery.", 
+    "flags": [ "BIONIC_SHOCKPROOF", "BIONIC_POWER_SOURCE", "CLIMATE_CONTROL" ]
+  },  
+        {
+    "type": "enchantment",
+    "id": "PCBM_furmut",
+    "condition": "ALWAYS",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+	"mutations": [ "PCBM_metal_fur"  ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_metal_fur",
+    "name": { "str": "Energised Fur" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "visibility": 4,
+    "ugliness": -1,
+    "description": "A fine layer of metal fuzz coats your joints, limbs and head. Metaphorically and literally thrumming with power, it's the perfect blend of practicality and cuteness.",
+    "types": [ "SKIN", "SCENT", "hair_color", "hair_style", "facial_hair" ],
+    "category": [ "ROBOT" ],
+    "scent_intensity": -2000,
+    "armor": [ { "parts": "ALL", "bash": 3 } ],
+	"mixed_effect": false,
+	"wet_protection": [
+      { "part": "head", "ignored": 1 },
+      { "part": "leg_l", "ignored": 5 },
+      { "part": "leg_r", "ignored": 5 },
+      { "part": "foot_l", "ignored": 1 },
+      { "part": "foot_r", "ignored": 1 },
+      { "part": "arm_l", "ignored": 4 },
+      { "part": "arm_r", "ignored": 4 },
+      { "part": "hand_l", "ignored": 1 },
+      { "part": "hand_r", "ignored": 1 },
+      { "part": "torso", "ignored": 10 }
+    ]
+  },
+
+   
+  {
+    "id": "pcbm_robo_skin",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Poly-Metal Weave PCBM" }, 
+    "description": "A complete dermal overwrite that lends the user flexibility, protection and a certain air of uniqueness.",
+    "price": "12000 USD",
+    "difficulty": 12
+  },
+  {
+    "id": "pcbm_robo_skin",
+    "type": "bionic",
+    "name": { "str": "Poly-metal Skin" },
+    "description": "A metal coating over a polymer layer provides 6 Cut, 3 Bash, 10 Stab, 8 Bullet and 4 Heat protection all over your body, as well as resisting rain. You also gain a +2 Dex bonus from a newfound flexibility.",
+    "occupied_bodyparts": [ [ "torso", 1 ], [ "head", 1 ], [ "arm_l", 1 ], [ "arm_r", 1 ], [ "hand_l", 1 ], [ "hand_r", 1 ] ],
+	"canceled_mutations":["BARK","BODYHAIR", "SKIN_ROUGH", "SCALES", "FEATHERS", "LIGHTFUR", "CHITIN", "THICK_SCALES", "SLEEK_SCALES", "PATCHSKIN1", "DOWN", "FUR", "URSINE_FUR", "LUPINE_FUR", "FELINE_FUR", "CHITIN_FUR", "RABBIT_FUR", "CHITIN2", "PATCHSKIN2", "LYNX_FUR", "CHITIN_FUR2", "CHITIN3", "SUBDERMALARMOR", "CHITIN_FUR3", "PCBM_metal_fur"],
+	"enchantments": [ "PCBM_skinned" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "Removing this PCBM would be skinning the patient alive.", 
+    "flags": [ "BIONIC_SHOCKPROOF", "BIONIC_POWER_SOURCE", "CLIMATE_CONTROL" ]
+  },  
+        {
+    "type": "enchantment",
+    "id": "PCBM_skinned",
+    "condition": "ALWAYS",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+	"mutations": [ "PCBM_skinned"  ],
+	"values": [{ "value": "DEXTERITY", "add": 2  }]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_skinned",
+    "name": { "str": "Polymer Metal Skin" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "visibility": 4,
+    "ugliness": -1,
+    "description": "Your skin is as hard as metal, while just as flexible as flesh, more so in some ways. Its hairlessness and slightly cold feel gives a ... unique sensation.",
+    "types": [ "SKIN", "skin_tone", "hair_color", "hair_style", "facial_hair" ],
+    "category": [ "ROBOT" ],
+    "armor": [ {  "parts": "ALL", "cut": 6, "stab": 10, "bullet": 8, "bash": 3, "heat": 4 } ],
+	"mixed_effect": false,
+	"wet_protection": [
+      { "part": "head", "ignored": 25 },
+      { "part": "leg_l", "ignored": 25 },
+      { "part": "leg_r", "ignored": 25 },
+      { "part": "foot_l", "ignored": 25 },
+      { "part": "foot_r", "ignored": 25 },
+      { "part": "arm_l", "ignored": 25 },
+      { "part": "arm_r", "ignored": 25 },
+      { "part": "hand_l", "ignored": 25 },
+      { "part": "hand_r", "ignored": 25 },
+      { "part": "torso", "ignored": 25 }
+    ]
+  },
+  
+
+
+    {
+    "id": "pcbm_robo_paws",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Claw-Hand PCBM" },
+    "description": "Advertised for it's weapon utility, nonetheless this PCBM converts the lower forearms and hands into what is clearly a paw-like configuration. Fortunately they retain most of their previous dexterity while being significantly tougher.",
+    "price": "12000 USD",
+    "difficulty": 12
+  },
+  {
+    "id": "pcbm_robo_paws",
+    "type": "bionic",
+    "name": { "str": "Synthetic Claw Hands" },
+    "description": "These synthetic paw-like hands give 10 Bash, 15 Cut, 20 Bullet and 5 Enviromental protection as well as protecting partially against wet. While slightly encumbering, your sharp metal claws can be used in hand to hand combat to deadly effect.",
+    "occupied_bodyparts": [ [ "hand_l", 1 ], [ "hand_r", 1 ] ],
+    "env_protec": [ [ "hand_l", 5 ], [ "hand_r", 5 ]  ],   
+	"enchantments": [ "PCBM_pawbs" ],
+    "flags": [ "BIONIC_SHOCKPROOF"],
+	"canceled_mutations": [ "INSECT_ARMS", "INSECT_ARMS_OK", "ARACHNID_ARMS", "ARACHNID_ARMS_OK", "PAWS_LITTLE", "PAWS", "PAWS_LARGE", "ARM_TENTACLES", "ARM_TENTACLES_4", "ARM_TENTACLES_8"],	
+	"can_uninstall": false,
+    "no_uninstall_reason": "Removing this PCBM would leave the patient entirely without hands.", 
+    "included_bionics": ["pcbm_hand_holder"]
+  },
+  
+  {
+    "id": "pcbm_hand_holder",
+    "type": "bionic",
+    "name": { "str": "ΩHands Roboticized." },
+    "description": "Of course your hands are still warm to hold, what barbarian doesn't have climate controls for their extremities. This is just a marker.",
+    "included": true,
+	"can_uninstall": false,
+    "no_uninstall_reason": "This is just a placeholder.",
+    "flags": [ "BIONIC_SHOCKPROOF", "TRADER_AVOID"  ]
+  },
+        {
+    "type": "enchantment",
+    "id": "PCBM_pawbs",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_pawbs" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_pawbs",
+    "name": { "str": "Synthetic Paws" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "visibility": 2,
+    "ugliness": 1,
+    "description": "Your paws are stainless steel and titanium with a thin layer of synth-skin and artificial fur.  They might as well be made of flesh and bone for the comfort they offer when held, mind the claws though.",
+    "category": [ "ROBOT" ],
+    "types": [ "HANDS","CLAWS" ],
+    "cut_dmg_bonus": 6,
+    "butchering_quality": 30,
+	"mixed_effect": true,
+	"encumbrance_always": [ [ "hand_l", 4 ], [ "hand_r", 4 ] ],
+    "armor": [ 
+	{ "parts": "hand_l", "bash": 10, "cut": 15, "bullet": 20 },
+	{ "parts": "hand_r", "bash": 10, "cut": 15, "bullet": 20 } ],
+	"wet_protection": [
+      { "part": "hand_l", "ignored": 25 },
+      { "part": "hand_r", "ignored": 25 }    ],
+    "flags": [ "UNARMED_BONUS" ]
+  },
+  
+    {
+    "id": "pcbm_robo_hans",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Ferro-Touch Hands PCBM" },
+    "description": "Portrayed as ferromagnetic, these hands are actually a kind of polymer, capable of being reshaped into a few preset configurations, these tough yet delicate hand/forearm replacements are great for the engineer and crafter.",
+    "price": "12000 USD",
+    "difficulty": 12
+  },
+  {
+    "id": "pcbm_robo_hans",
+    "type": "bionic",
+    "name": { "str": "Ferro-Touch Hands" },
+    "description": "Not especially armoured, offering 2 Bash, 5 Cut 3 Bullet and 5 Enviromental resistance, these gands give a +2 bonus to most crafting skills (Computer, Mechanics, Fabrication, Electronics and Tailoring). ",
+    "occupied_bodyparts": [ [ "hand_l", 1 ], [ "hand_r", 1 ] ],
+    "env_protec": [ [ "hand_l", 5 ], [ "hand_r", 5 ]  ],   
+	"enchantments": [ "PCBM_handy" ],
+    "flags": [ "BIONIC_SHOCKPROOF"],
+	"canceled_mutations": [ "INSECT_ARMS", "INSECT_ARMS_OK", "ARACHNID_ARMS", "ARACHNID_ARMS_OK", "PAWS_LITTLE", "PAWS", "PAWS_LARGE", "ARM_TENTACLES", "ARM_TENTACLES_4", "ARM_TENTACLES_8",],	
+	"can_uninstall": false,
+    "no_uninstall_reason": "Removing this PCBM would leave the patient entirely without hands.", 
+    "included_bionics": ["pcbm_hand_holder"]
+  },
+  
+        {
+    "type": "enchantment",
+    "id": "PCBM_handy",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_handy" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_handy",
+    "name": { "str": "Ferro Manipulator Hands" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "visibility": 2,
+    "ugliness": 1,
+    "description": "The configurations of these hands are mostly utility in function but they all are perfectally suitable to hold things and be held.",
+    "category": [ "ROBOT" ],
+    "types": [ "HANDS" ],
+	"craft_skill_bonus": [ [ "computer", 2 ], [ "mechanics", 2 ], [ "fabrication", 2 ], [ "electronics", 2 ], [ "tailor", 2 ] ], 
+	"mixed_effect": true,
+    "armor": [ 
+	{ "parts": "hand_l", "bash": 2, "cut": 5, "bullet": 3 },
+	{ "parts": "hand_r", "bash": 2, "cut": 5, "bullet": 3 } ],
+	"wet_protection": [
+      { "part": "hand_l", "ignored": 25 },
+      { "part": "hand_r", "ignored": 25 }    ]
+  },
+  
+      {
+    "id": "pcbm_robo_plastic",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Upper Limb Polymer Coating PCBM" },
+    "description": "Despite it's name this bionic is more of a replacement system for the upper portion of a persons limbs and connective joints, as one might expect from a PCBM. This bionic can lead some decent support and strength to a persons body, but is considered more of an intermediate connector between limb and torso replacements.",
+    "price": "12000 USD",
+    "difficulty": 10
+  },
+  {
+    "id": "pcbm_robo_plastic",
+    "type": "bionic",
+    "name": { "str": "Upper Limb Polymer Coating" },
+    "description": "Your new upper limbs grant a +2 STR bonus, 15 Bash, 20 Cut and 25 Bullet, 5 Enviromental protection to your legs and allows you to carry 15 Kg more. While your arms are close to normal size, your stout thighs limit what can be worn on your legs.",
+    "occupied_bodyparts": [ [ "leg_l", 2 ], [ "leg_r", 2 ], [ "arm_l", 1 ], [ "arm_r", 1 ] ],
+    "weight_capacity_bonus": "15 kg",
+    "env_protec": [ [ "arm_l", 5 ], [ "arm_r", 5 ], [ "leg_l", 5 ], [ "leg_r", 5 ]  ],   
+	"stat_bonus": [ [ "STR", 2 ] ],
+	"enchantments": [ "PCBM_support" ],
+    "flags": [ "BIONIC_SHOCKPROOF"],
+	"canceled_mutations":["PCBM_thicc" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "This PCBM is the only thing connecting the patients extremities to their torso.", 
+    "included_bionics": ["pcbm_arm_holder", "pcbm_leg_holder"]
+  },
+  {
+    "id": "pcbm_arm_holder",
+    "type": "bionic",
+    "name": { "str": "ΩArms Enhanced" },
+    "description": "Robotic arms that give everyone a ticket to the gunshow, fusion blaster optional. This is just a marker.",
+    "included": true,
+	"can_uninstall": false,
+    "no_uninstall_reason": "This is just a placeholder.",
+    "flags": [ "BIONIC_SHOCKPROOF", "TRADER_AVOID"  ]
+  }, 
+  {
+    "id": "pcbm_leg_holder",
+    "type": "bionic",
+    "name": { "str": "ΩLegs Leveled-up" },
+    "description": "Who needs flesh with mechanical legs like these! This is just a marker.",
+    "included": true,
+	"can_uninstall": false,
+    "no_uninstall_reason": "This is just a placeholder.",
+    "flags": [ "BIONIC_SHOCKPROOF", "TRADER_AVOID" ]
+  },
+        {
+    "type": "enchantment",
+    "id": "PCBM_support",
+    "condition": "ALWAYS",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+	"mutations": [ "PCBM_support" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_support",
+    "name": { "str": "Polymer Limb Supports" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "visibility": 6,
+    "ugliness": 0,
+    "description": "Your arms and legs appear to be covered in a plastic shell, though it is far stronger than that, and contains some sophisticated interior biomechanics to maintain normal mobility. Also makes a fun Clunk when tapped.",
+    "category": [ "ROBOT" ],
+	"mixed_effect": true,
+	"restricts_gear": ["leg_l", "leg_r" ],
+    "allow_soft_gear": true,
+    "armor": [ 
+	{ "parts": "arm_l", "bash": 15, "cut": 20, "bullet": 25 },
+	{ "parts": "arm_r", "bash": 15, "cut": 20, "bullet": 25 },
+	{ "parts": "leg_l", "bash": 15, "cut": 20, "bullet": 25 },
+	{ "parts": "leg_r", "bash": 15, "cut": 20, "bullet": 25 } ],
+	"wet_protection": [
+      { "part": "leg_l", "ignored": 25 },
+      { "part": "leg_r", "ignored": 25 },
+      { "part": "arm_l", "ignored": 24 },
+      { "part": "arm_r", "ignored": 24 }
+    ]
+  },
+
+  
+      {
+    "id": "pcbm_robo_digi",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Digital-grade Legs PCBM" },
+    "description": "A digitigrade Lower-Leg replacement PCBM that helps the user excel at all sorts of leg based movement, it's well protected too!",
+    "price": "12000 USD",
+    "difficulty": 14
+  },
+  {
+    "id": "pcbm_robo_digi",
+    "type": "bionic",
+    "name": { "str": "Digital-grade Legs" },
+    "description": "Light and durable, the servos in these lower-legs give 10 Bash, 15 Cut, 20 Bullet and 5 Enviromental protection but only to the feet. They help move faster in every way even swimming and across obstacles. Its inhuman design limits footwear though.",
+    "occupied_bodyparts": [ [ "foot_l", 1 ], [ "foot_r", 1 ] ],
+    "env_protec": [ [ "foot_l", 5 ], [ "foot_r", 5 ]  ],   
+	"enchantments": [ "PCBM_digits" ],
+	"stat_bonus": [ [ "DEX", 2 ] ],
+    "flags": [ "BIONIC_SHOCKPROOF"],
+	"canceled_mutations":["HOOVES", "LEG_TENTACLES", "PADDED_FEET", "RABBIT_FEET", "ROOTS2", "ROOTS3", "CHLOROMORPH", "TAIL_SNAKE", "TAIL_SNAKE_OK", "RAP_TALONS", "PCBM_thicc"],
+	"can_uninstall": false,
+    "no_uninstall_reason": "Without these the patient would no longer be able to mosey.", 
+    "included_bionics": ["pcbm_feet_holder"]
+  },
+  
+  {
+    "id": "pcbm_feet_holder",
+    "type": "bionic",
+    "name": { "str": "ΩFeet Fixed." },
+    "description": "You can keep on running and running and running. This is just a marker.",
+    "included": true,
+	"can_uninstall": false,
+    "no_uninstall_reason": "This is just a placeholder.",
+    "flags": [ "BIONIC_SHOCKPROOF", "TRADER_AVOID"  ]
+  },
+        {
+    "type": "enchantment",
+    "id": "PCBM_digits",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_digits" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_digits",
+    "name": { "str": "Chrome Legs" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "visibility": 2,
+    "ugliness": 1,
+    "description": "Your cybernetic legs and grippy footpaws make you quite swift on your feet and always ready to spring into action.",
+    "category": [ "ROBOT" ],
+    "types": [ "LEGS", "RUNNING" ], 
+	"movecost_swim_modifier": 0.9,
+	"movecost_modifier": 0.9,
+	"movecost_flatground_modifier": 0.8,
+    "movecost_obstacle_modifier": 0.8,
+	"restricts_gear": [ "foot_l", "foot_r" ],
+    "allow_soft_gear": true,
+    "armor": [ 
+	{ "parts": "foot_l", "bash": 10, "cut": 15, "bullet": 20 },
+	{ "parts": "foot_r", "bash": 10, "cut": 15, "bullet": 20 } ],
+	"wet_protection": [
+      { "part": "foot_l", "ignored": 25 },
+      { "part": "foot_r", "ignored": 25 }    ]
+  },
+  
+      {
+    "id": "pcbm_robo_replika",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Stalker Robo-Legs PCBM" },
+    "description": "Named for a popular book, these bionic legs are rated to handle anomalies, mutants and bandits. While not as fast as some leg variants, this PCBM is incredibly sturdy, making you stronger, faster and are excellent for climbing obstacles. ",
+    "price": "12000 USD",
+    "difficulty": 13
+  },
+  {
+    "id": "pcbm_robo_replika",
+    "type": "bionic",
+    "name": { "str": "Stalker Robo-Legs" },
+    "description": "Neon-lit metal legs that give a large 35 Bash, 45 Cut, 40 Bullet and 10 Non-Physical protection, as well as completely protecting again wet. It also gives a small bonus of +1 Str, Dex and 10 Kg of carry weight while increasing obstacle traversal speed. Its inhuman design limits footwear though.",
+    "occupied_bodyparts": [ [ "leg_l", 2 ], [ "leg_r", 2 ], [ "foot_l", 1 ], [ "foot_r", 1 ] ],
+    "weight_capacity_bonus": "10 kg",
+    "env_protec": [ [ "foot_l", 5 ], [ "foot_r", 5 ], [ "leg_l", 5 ], [ "leg_r", 5 ]  ],   
+	"stat_bonus": [ [ "STR", 1 ], [ "DEX", 1] ],
+	"enchantments": [ "PCBM_thicc" ],
+    "flags": [ "BIONIC_SHOCKPROOF"],
+	"canceled_mutations":["HOOVES", "LEG_TENTACLES", "PADDED_FEET", "RABBIT_FEET", "ROOTS2", "ROOTS3", "CHLOROMORPH", "TAIL_SNAKE", "TAIL_SNAKE_OK", "RAP_TALONS", "PCBM_support", "PCBM_digits"],
+	"can_uninstall": false,
+    "no_uninstall_reason": "Removing this PCBM would leave the patient without a leg to stand on.", 
+    "included_bionics": ["pcbm_feet_holder", "pcbm_leg_holder"]
+  },
+
+        {
+    "type": "enchantment",
+    "id": "PCBM_thicc",
+    "condition": "ALWAYS",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+	"mutations": [ "PCBM_thicc" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_thicc",
+    "name": { "str": "Reinforced Legs" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "visibility": 6,
+    "ugliness": 0,
+    "description": "The lower parts of your legs are almost entirely metal with some slick neon lighting. Despite the added weight the sensations from them still make you want to jump and hop around.",
+    "category": [ "ROBOT" ],
+	"mixed_effect": true,
+	"restricts_gear": ["leg_l", "leg_r", "foot_l", "foot_r" ],
+    "allow_soft_gear": true,
+    "movecost_obstacle_modifier": 0.7,
+    "armor": [ 
+	{ "parts": "foot_l", "bash": 35, "cut": 45, "bullet": 40, "non_physical": 10 },
+	{ "parts": "foot_r", "bash": 35, "cut": 45, "bullet": 40, "non_physical": 10  },
+	{ "parts": "leg_l", "bash": 35, "cut": 45, "bullet": 40, "non_physical": 10  },
+	{ "parts": "leg_r", "bash": 35, "cut": 45, "bullet": 40, "non_physical": 10  } ],
+	"wet_protection": [
+      { "part": "leg_l", "ignored": 99 },
+      { "part": "leg_r", "ignored": 99 },
+      { "part": "arm_l", "ignored": 99 },
+      { "part": "arm_r", "ignored": 99 }
+    ]
+  },
+  
+  
+      {
+    "id": "pcbm_robo_spid",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Blade Monarch PCBM" },
+    "description": "These shoulder mounted blades are deeply intertwined with the users shoulders and upper arms, lending them an unparalled strike strength and intimidation factor.",
+    "price": "12000 USD",
+    "difficulty": 14
+  },
+  {
+    "id": "pcbm_robo_spid",
+    "type": "bionic",
+    "name": { "str": "Blade Monarch Arms" },
+    "description": "The auxiliary blades on your upper boddy will strike whenever an opening presents itself, and protect for 20 Bash and 25 Cut protection as needed. It's also pretty intimidating.",
+    "occupied_bodyparts": [ [ "arm_l", 2 ], [ "arm_r", 2 ] ],
+    "env_protec": [ [ "arm_l", 1 ], [ "arm_r", 1 ]  ], 
+	"enchantments": [ "PCBM_monarch" ],
+    "canceled_mutations": ["PCBM_support"],
+    "flags": [ "BIONIC_SHOCKPROOF", "BLOCK_WHILE_WORN"],
+	"can_uninstall": false,
+    "no_uninstall_reason": "Disarming the patient isn't possible with such deeply integrated bionics.", 
+    "included_bionics": ["pcbm_arm_holder"]
+  },
+  
+   {
+    "type": "enchantment",
+    "id": "PCBM_monarch",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_monarch" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_monarch",
+    "name": { "str": "Auxiliary Blades" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "visibility": 2,
+    "ugliness": 2,
+    "description": "Your shoulder blades flex and sway with every movement, just waiting to lunge out at any target you wish.",
+    "category": [ "ROBOT" ],
+	"restricts_gear": [ "arm_l", "arm_r", "torso"],
+    "social_modifiers": { "intimidate": 20 },
+    "allow_soft_gear": true,  
+	"attacks": {
+     "attack_text_u": "You strike %s with one of your monarch blades",
+     "attack_text_npc": "%1$s slashes %2$s with a monarch blade",
+     "chance": 22,
+     "base_damage": { "damage_type": "cut", "amount": 40 } },
+    "armor": [ 
+	{ "parts": "arm_l", "bash": 20, "cut": 25},
+	{ "parts": "arm_r", "bash": 20, "cut": 25} ]
+  },
+  
+    
+      {
+    "id": "pcbm_robo_tail",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Electro-Static Tail PCBM" },
+    "description": "This simple seeming device is actually one of the more elaborate and sophisticated baseline PCBMs. Consisting of a bundle of prehensile smart fibres that constantly interact with the surrounding enviroment, gathering power from various electrical sources, from outlets to friction and static. Excess energy generated in combat can be used to shock foes.",
+    "price": "12000 USD",
+    "difficulty": 14
+  },
+  {
+    "id": "pcbm_robo_tail",
+    "type": "bionic",
+    "name": { "str": "Electro-Static Tail" },
+    "description": "This artificial tail is continuously generating power at all times that can be channeled to your power system or used to shock enemies. Its size does block a lot of hard armours from being worn but at least it does help you balance yourself and dodge better.",
+    "occupied_bodyparts": [ [ "torso", 2 ] ],
+    "fuel_options": [ "pcbm_static" ],
+    "fuel_efficiency": 0.01,
+    "time": 1,
+    "canceled_mutations": ["PCBM_Ttail"],
+    "flags": [ "BIONIC_POWER_SOURCE", "BIONIC_TOGGLED", "BIONIC_SHOCKPROOF" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "Removing this would leave the patient off balance, unable to express happiness as easily and paralyzed from the waist down.", 
+	"enchantments": [ "PCBM_Etail" ]
+  },  
+        {
+    "type": "enchantment",
+    "id": "PCBM_Etail",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_Etail" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_Etail",
+    "name": { "str": "Sparking Tail" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "visibility": 2,
+    "ugliness": -1,
+    "dodge_modifier": 1,
+    "description": "Your tail gently caresses the enviroment in search of power, for yourself and against your enemies, it's also incredibly soft and fluffy!",
+    "category": [ "ROBOT" ],
+    "types": [ "TAIL" ], 
+	"restricts_gear": [ "leg_l", "leg_r" ],
+    "allow_soft_gear": true,
+    "attacks": {
+     "attack_text_u": "You zap %s with your tail",
+     "attack_text_npc": "%1$s zaps %2$s with their tail",
+     "body_part": "leg_l",
+     "chance": 35,
+     "base_damage": { "damage_type": "electric", "amount": 20 } }
+
+  },
+    {
+    "type": "GENERIC",
+    "id": "pcbm_static",
+    "symbol": "?",
+    "color": "white",
+    "name": { "str": "Static Electricity", "str_pl": "none" },
+    "description": "Do Not Read Fake item",
+    "stackable": true,
+    "volume": "0 ml",
+    "flags": [ "PSEUDO", "PERPETUAL" ],
+    "fuel": { "energy": 1 }
+  },
+
+    
+      {
+    "id": "pcbm_robo_mecha",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Mechadendrite Tail PCBM" },
+    "description": "A simple but useful collection of precision tools mounted to an auxilary limb in the tailbone position, this PCBM is both practical and comfortable.",
+    "price": "10000 USD",
+    "difficulty": 13
+  },
+  {
+    "id": "pcbm_robo_mecha",
+    "type": "bionic",
+    "name": { "str": "Mechadendrite Tail" },
+    "description": "This mechanical limb contains a precision saw, wrench and screwdriver while also being able to function as a crowbar, drill and lockpick, it also gives +1 Dexterity and helps you dodge. It also lets you recover your stamina slightly faster.",
+    "occupied_bodyparts": [ [ "torso", 2 ] ],
+	"stat_bonus": [  [ "DEX", 1] ],
+    "fake_item": "pcbm_toolset",
+    "canceled_mutations": ["PCBM_Etail"],
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_SHOCKPROOF" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "This tail is connected directly into the patients spine and would be unsafe to remove.", 
+	"enchantments": [ "PCBM_Ttail" ]
+  },  
+        {
+    "type": "enchantment",
+    "id": "PCBM_Ttail",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_Ttail" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_Ttail",
+    "name": { "str": "Mechadendrite Tail" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "description": "The tools inside your tail are of course handy, but even better is the ability to plant in on the ground and lean against it to rest, that's the power of technology.",
+    "visibility": 2,
+    "ugliness": 1,
+    "dodge_modifier": 1,
+	"stamina_regen_modifier": 0.1,
+    "category": [ "ROBOT" ],
+    "types": [ "TAIL" ], 
+	"restricts_gear": [ "leg_l", "leg_r" ]
+
+  },
+
+
+  {
+    "id": "pcbm_robo_Thresh",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Mechanical Supremacy PCBM" },
+    "description": "\"For those who never felt comfortable in their own flesh... Grow, surpass your human limits and join us as a higher class of being, above the rot of biological world.\" Below these scrawled words a digital display advertises a nanite-based bio-overwriter package, as long as you have the following PCBM type's installed: Facial, Ear, Torso, Arm, Leg, Hand, Feet.",
+    "price": "12000000 USD",
+    "difficulty": 8
+  },
+  {
+    "id": "pcbm_robo_Thresh",
+    "type": "bionic",
+    "name": { "str": "Mechanical System" },
+    "description": "You are more machine than anything else, you are a Mechanicorum. You no longer need to eat or sleep*, and you are over all better ( +3 PER, INT) Faster (Attack cost -10%, Move cost -5%) and stronger (+2 STR, DEX). However you cannot channel mana nearly as well and you cannot heal without specialised tools. *Food may still be consumed for bionic energy purposes. In the event of being out of energy, fatigue will accumulate as a failsafe. (Bionic armour interfact included)",
+    "flags": [ "BIONIC_SHOCKPROOF", "BIONIC_ARMOR_INTERFACE" ],
+	"required_bionics": [ "pcbm_face_holder","pcbm_ears_holder","pcbm_chest_holder","pcbm_arm_holder", "pcbm_leg_holder", "pcbm_hand_holder", "pcbm_feet_holder" ],
+	"capacity": "1500kJ",
+	"enchantments": [ "PCBM_Ethresh" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "There is no going back from this.", 
+    "included_bionics": ["pcbm_foodtofuel", "pcbm_sleepybot"]
+  },
+  
+  {
+    "id": "pcbm_foodtofuel",
+    "type": "bionic",
+    "name": { "str": "Automated Digestive System" },
+    "description": "You no longer have or need a true stomach, but you can still make use of food, activate to convert stored food efficiently into bionic energy.",
+    "included": true,
+    "fuel_options": [ "metabolism" ],
+    "fuel_efficiency": 0.4,
+    "time": 1,
+	"can_uninstall": false,
+    "no_uninstall_reason": "Removable of emergency power supply system not authorized.", 
+    "flags": [ "BIONIC_SHOCKPROOF", "BIONIC_POWER_SOURCE", "BIONIC_TOGGLED" ]
+  },
+  
+  {
+    "id": "pcbm_sleepybot",
+    "type": "bionic",
+    "name": { "str": "Fatigue Eliminator" },
+    "description": "You don't need sleep, but keeping your circuits fully operational requires constant upkeep, if you ever turn this feature off, or run out of energy you will rapidly accumulate fatigue as you switch into power saving mode.",
+    "included": true,
+	"react_cost": "500 J",
+	"time": 5,
+	"enchantments": [ "PCBM_sleeepy", "PCBM_wakey" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "Removable of backup processors not authorized.", 
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_SLEEP_FRIENDLY", "INITIALLY_ACTIVATE" ]
+  }, 
+  
+        {
+    "type": "enchantment",
+    "id": "PCBM_Ethresh",
+    "condition": "ALWAYS",
+	"mutations": [ "THRESH_ROBOT" ],
+    "ench_effects": [ { "effect": "pcbm_nosleep", "intensity": 1 } ],
+	"values": [
+      { "value": "METABOLISM", "multiply": 0.01 },
+      { "value": "THIRST", "multiply": 0.2 },
+      { "value": "ATTACK_COST", "multiply": -0.10 },
+      { "value": "MOVE_COST", "multiply": -0.05 },
+      { "value": "MANA_CAP", "multiply": -0.5 },
+      { "value": "STRENGTH", "add": 2 },
+      { "value": "DEXTERITY", "add": 2 },
+      { "value": "PERCEPTION", "add": 3 },
+      { "value": "INTELLIGENCE", "add": 3 },
+      { "value": "FATIGUE", "multiply": 0 }
+    ]
+  }, 
+  
+        {
+    "type": "enchantment",
+    "id": "PCBM_sleeepy",
+    "condition": "INACTIVE",
+	"values": [
+      { "value": "FATIGUE", "multiply": 250 }
+    ]
+  }, 
+  
+  {
+    "type": "enchantment",
+    "id": "PCBM_wakey",
+    "condition": "ACTIVE",
+    "ench_effects": [ { "effect": "pcbm_nottired", "intensity": 1 } ]
+    
+  },
+  
+  
+  
+    
+      {
+    "id": "pcbm_mech_wing",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Hardlight Wings PCBM Mk II" },
+    "description": "ATTENTION: Mk II PCBMs can only be installed into fully converted users. This PCBM embeds physics defying projectors into your back, allowing you to slow your falls and dodge out of the way of enemy attacks when active. Despite the name they actually use a form of quantum entangling energy displacement.",
+    "price": "25000 USD",
+    "difficulty": 17
+  },
+  {
+    "id": "pcbm_mech_wing",
+    "type": "bionic",
+    "name": { "str": "Hardlight Wings" },
+    "description": "A set of projectors that less you hang from the fabric of reality. They can't be used to fly, but can slow falls massively and help in dodging when activated.",
+    "occupied_bodyparts": [ [ "torso", 3 ] ],
+	"required_bionics": [ "pcbm_robo_Thresh" ],
+    "flags": [  "BIONIC_SHOCKPROOF" ],
+    "canceled_mutations": ["VINES1", "VINES2", "VINES3", "WINGS_STUB", "WINGS_BIRD", "WINGS_INSECT", "WINGS_BAT", "WINGS_BUTTERFLY" ],	
+	"can_uninstall": false,
+    "no_uninstall_reason": "This PCBM fufills the role of shoulder blades and cannot be easily replaced.", 
+	"enchantments": ["PCBM_Winged" ]
+  },  
+        {
+    "type": "enchantment",
+    "id": "PCBM_Winged",
+	"ench_effects": [ {"effect": "pcbm_part_robot", "intensity": 2 } ],
+    "condition": "ALWAYS",
+	"values":[ {    "value": "BONUS_DODGE",  "add": 2 } ],
+	"mutations": [ "PCBM_Winged" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_Winged",
+    "name": { "str": "Shimmering Wings" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "visibility": 5,
+    "ugliness": -3,
+    "description": "These shimmering wings almost look tacky and fake, but the way they don't reflect the light and sometimes leave a faint trail of particles behind... ",
+    "category": [ "ROBOT" ],
+    "types": [ "WINGS" ], 
+    "falling_damage_multiplier": 0.10,
+	"restricts_gear": [ "torso" ],
+    "allow_soft_gear": true
+  },
+  
+  
+    
+      {
+    "id": "pcbm_mech_brain",
+    "copy-from":"pcbm_mech_wing",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Cortical Uploading PCBM Mk II" },
+    "description": "ATTENTION: Mk II PCBMs can only be installed into fully converted users. Though the average PCBM has almost certainly replaced many functional brain parts, this bionic takes the final step of uploading the user's entire personality, memories and instincts to hardware. ",
+    "price": "25000 USD",
+    "difficulty": 16
+  },
+  {
+    "id": "pcbm_mech_brain",
+    "type": "bionic",
+    "name": { "str": "Bionic Brain" },
+    "description": "Your inorganic mind now processes information much faster. You gain +2 to Intelligence and +4 Dexterity and can now implant BMC data chips to modifying your consciousness as you wish.",
+    "occupied_bodyparts": [ [ "head", 1 ] ],
+	"stat_bonus": [ [ "INT", 2 ],  ["PER", 4 ] ],
+	"required_bionics": [ "pcbm_robo_Thresh" ],
+    "flags": [  "BIONIC_SHOCKPROOF" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "I'm sure you can think of some reasons removing a brain might be considered a bad thing.", 
+	"enchantments": [ "PCBM_brains" ]
+  },  
+        {
+    "type": "enchantment",
+    "id": "PCBM_brains",
+	"ench_effects": [ {"effect": "pcbm_mech_brained", "intensity": 1 } ],
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_brains" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_brains",
+    "name": { "str": "Bionic Brains" },
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "description": "A digital brain means that your mind is always working at exactly the speed you want it to, no more hesitation, no more foggy brains on waking up. More over, with your personality now on a readable format, you are free to modify it as you wish, your morality is for your conscious mind to decide.",
+    "category": [ "ROBOT" ]
+  },
+  
+  
+    
+      {
+    "id": "pcbm_mech_organs",
+    "copy-from":"pcbm_mech_wing",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Bio-Organic Cleansing Unit PCBM Mk II" },
+    "description": "ATTENTION: Mk II PCBMs can only be installed into fully converted users. The transition process to Mechani leaves behind a fair amount of excess biological components. This upgrade authorises replacement, cleansing and restructuring of internal systems to eliminate these contaminants. The only organ left untouched is the brain. ",
+    "price": "25000 USD",
+    "difficulty": 17
+  },
+  {
+    "id": "pcbm_mech_organs",
+    "type": "bionic",
+    "name": { "str": "Inorganic Organs" },
+    "description": "You no longer have useless flesh cluttering up your internals, as such, you are now sturdier and do not suffer from conditions that affect biologicals such as poisons and smoke inhalation.",
+	"stat_bonus": [ [ "STR", 1 ],  ["DEX", 1 ] ],
+	"required_bionics": [ "pcbm_robo_Thresh" ],
+    "occupied_bodyparts": [ [ "torso", 1 ], [ "head", 1 ], [ "arm_l", 0 ], [ "arm_r", 0 ], [ "leg_l", 0 ], [ "leg_r", 0 ] ],
+    "flags": [  "BIONIC_SHOCKPROOF" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "There's not really anything to remove, the organs are gone.", 
+	"enchantments": [ "PCBM_organs" ]
+  },  
+        {
+    "type": "enchantment",
+    "id": "PCBM_organs",
+	"ench_effects": [ {"effect": "pcbm_mech_organic", "intensity": 1 } ],
+    "condition": "ALWAYS"
+  },
+  
+  
+    
+      {
+    "id": "pcbm_data_pred4",
+    "copy-from":"pcbm_mech_wing",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Behavioural Manipulation Chip v.pred.4.0" },
+    "description": "BMC's are software that a Mechani can upload to manipulate their own behaviours and attitudes. This chip will alter your attitudes towards fighting, increasing combat EXP gain and ridding yourself of the guilt of murder.",
+    "price": "25 USD",
+    "difficulty": 1
+  },
+  {
+    "id": "pcbm_data_pred4",
+    "type": "bionic",
+    "name": { "str": "Pred v4.0 BMC" },
+    "description": "Violence is natural, sometimes in this world things need to be done that wouldn't be considered in more peaceful times, but that is meaningless now. Target.Guilt= O. ",
+	"required_bionics": [ "pcbm_mech_brain" ],
+    "flags": [  "BIONIC_SHOCKPROOF" ],
+	"enchantments": [ "PCBM_organs" ]
+  },  
+        {
+    "type": "enchantment",
+    "id": "PCBM_pred",
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_pred" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_pred",
+    "name": { "str": "Violence" },
+	"player_display": false,
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "description": "hooray, murder",
+    "category": [ "ROBOT" ],
+    "flags": [  "PRED4"  ]
+  },
+  
+  
+    
+      {
+    "id": "pcbm_data_psych",
+    "copy-from":"pcbm_data_pred4",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Behavioural Manipulation Chip v.Path.2" },
+    "description": "BMC's are software that a Mechani can upload to manipulate their own behaviours and attitudes. This chip will turn your mind away from empathy with humanity, seeing them as no different from other animals.",
+    "price": "25 USD",
+    "difficulty": 1
+  },
+  {
+    "id": "pcbm_data_psych",
+    "type": "bionic",
+    "name": { "str": "Path v2.0 BMC" },
+    "description": "If Entity contains variable: Meat then = animal. Seeing homo sapiens ripped apart is gross and a bit sad, you guess, but there's a lot of that going around at the moment, they aren't special.",
+	"required_bionics": [ "pcbm_mech_brain" ],
+    "flags": [  "BIONIC_SHOCKPROOF" ],
+	"enchantments": [ "PCBM_psych" ]
+  },  
+        {
+    "type": "enchantment",
+    "id": "PCBM_psych",
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_psych" ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_psych",
+    "name": { "str": "chopchop" },
+	"player_display": false,
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "description": "hooray, murder",
+    "category": [ "ROBOT" ],
+    "flags": [  "PSYCHOPATH"  ]
+  },
+  
+  
+    
+      {
+    "id": "pcbm_data_spirit",
+    "copy-from":"pcbm_data_pred4",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Behavioural Manipulation Chip v.4S3ND" },
+    "description": "BMC's are software that a Mechani can upload to manipulate their own behaviours and attitudes. Enlightenment can be found in many places, the machine can bring one to understand the divine in a way unimagined by mortals.",
+    "price": "25 USD",
+    "difficulty": 1
+  },
+  {
+    "id": "pcbm_data_spirit",
+    "type": "bionic",
+    "name": { "str": "4.S3.ND BMC" },
+    "description": "Spirituality is a choice, and you have made the decision to understand devotion on a fundamental level. Your mana regen is increased, you derive more pleasure from spiritual activities and you can cast spells without saying a word.",
+	"required_bionics": [ "pcbm_mech_brain" ],
+    "flags": [  "BIONIC_SHOCKPROOF" ],
+	"enchantments": [ "PCBM_psych" ]
+  },  
+        {
+    "type": "enchantment",
+    "id": "PCBM_spirit",
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_spirit" ],
+	"values": [
+      { "value": "MANA_REGEN", "multiply": 0.5 } ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_spirit",
+    "name": { "str": "ohhmmm" },
+	"player_display": false,
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "description": "deus ex",
+    "category": [ "ROBOT" ],
+    "flags": [  "SILENT_SPELL", "SPIRITUAL"   ]
+  },
+  
+  
+    
+      {
+    "id": "pcbm_data_int",
+    "copy-from":"pcbm_data_pred4",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Behavioural Manipulation Chip v.1.net" },
+    "description": "BMC's are software that a Mechani can upload to manipulate their own behaviours and attitudes. This chip allows for optimized thought and better analytical abilities. +1 Int.",
+    "price": "25 USD",
+    "difficulty": 1
+  },
+  {
+    "id": "pcbm_data_int",
+    "type": "bionic",
+    "name": { "str": "1.net BMC" },
+    "description": "Second thoughts and doubt are for humans. Without these obstacles, you can execute your will without hesitation (+1 Int). You can also pack your belongings more efficiently.",
+	"required_bionics": [ "pcbm_mech_brain" ],
+	"stat_bonus": [ [ "INT", 1] ],
+    "flags": [  "BIONIC_SHOCKPROOF" ],
+	"enchantments": [ "PCBM_thinky" ]
+  },
+          {
+    "type": "enchantment",
+    "id": "PCBM_thinky",
+    "condition": "ALWAYS",
+	"mutations": [ "PCBM_thinky" ]
+  },
+      {
+    "type": "mutation",
+    "id": "PCBM_thinky",
+    "name": { "str": "Tetris power" },
+	"player_display": false,
+    "points": 1,
+	"valid": false,
+	"purifiable": false,
+    "description": "Yeah That Makes Sense",
+	"packmule_modifier": 0.2,
+    "category": [ "ROBOT" ]
+  },
+    
+  
+  {
+    "id": "pcbm_sprint",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "Fast Efficient Running Accumulator PCBM" },
+    "description": "Never released on the open market nor having a clear creator, the FERA all terrain movement system is one of the stranger PCBMs to be developed. Utilising an array of electromagnetic devices, worked into a steel shell, the FERA utilises the lorentz force to hold the user to the ground as they run at extreme speeds, especially over flat ground. When activated the PCBM covers the user and interfaces with their hydraulics and shock absorbers, an absolute necessity to survive the massive forces and changed shape this bionic entails.",
+    "price": "25000 USD",
+    "difficulty": 17
+  },
+  
+  {
+    "type": "bionic",
+    "id": "pcbm_sprint",
+    "name": { "str": "FERA Quadrupedal Mode" },
+    "occupied_bodyparts": [ [ "arm_r", 2 ], [ "leg_r", 2 ] , [ "foot_r", 1 ] ,[  "arm_l", 2 ], [ "hand_l", 1 ] , [ "leg_l", 2 ] , [ "foot_l", 1 ], [ "torso", 8 ], [ "head", 1 ] ],
+    "act_cost": "40 kJ",
+    "react_cost": "15 kJ",
+    "time": 1,
+	"required_bionics": [ "bio_shock_absorber", "bio_hydraulics" ],
+    "fake_item": "pcbm_paws_n_claws",
+    "description": "When activated, the users bionics will dramaticlly change shape and convert the them to a more armoured and speed efficient form. While active this device drains a vast amount of power and the user cannot use any items (for obvious reasons) or dodge very well, but they can give a fairly powerful, yet slow blow with their new, magnetically charged paws.",
+	"enchantments": [ "pcbm_gofast" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "The FERA systems are complexly embedded all over the patients body and no uninstallation data is availible.", 
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_WEAPON" ]
+  },
+  
+  {
+    "type": "enchantment",
+    "id": "pcbm_gofast",
+    "condition": "ACTIVE",
+	"mutations": [ "PCBM_quadspeed" ],
+    "ench_effects": [ { "effect": "pcbm_gofaster", "intensity": 1 } ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_quadspeed",
+    "name": { "str": "Quad Speed" },
+    "description": "Debug",
+    "points": 0,
+	"player_display": true,
+	"valid": false, 
+	"purifiable": false,
+    "visibility": 10,
+    "ugliness": -8,
+    "armor": [ { "parts": "ALL", "bash": 8 }, { "parts": "ALL", "cut": 8 }, { "parts": "ALL", "bash": 3 } ],
+	"dodge_modifier" : -3,
+	"attackcost_modifier" : 1.5,
+	"stamina_regen_modifier": 2,
+	"max_stamina_modifier": 3.5,
+	"movecost_modifier" : 0.8, 
+	"movecost_flatground_modifier" : 0.3,
+	"movecost_obstacle_modifier" : 0.6,
+	"movecost_swim_modifier" : 0.9
+  },  
+  
+  {
+    "type": "GENERIC",
+    "id": "pcbm_paws_n_claws",
+    "weapon_category": [ "BIONIC_WEAPONRY", "FIST_WEAPONS" ],
+    "name": { "str": "Thundering paws" },
+    "description": "The sheer amout of power running through your temporary forelegs is a weapon unto itself. Not to mention that you Are technically unarmed...",
+    "weight": "100 g",
+    "to_hit": 3,
+    "color": "dark_gray",
+    "symbol": "K",
+    "material": [ "superalloy" ],
+    "techniques": [ "RAPID", "WBLOCK_2" ],
+    "volume": "2250 ml",
+    "cutting": 10,
+	"bashing": 10,
+    "flags": [ "NO_UNWIELD", "NO_DROP", "UNBREAKABLE_MELEE", "TRADER_AVOID", "ALWAYS_TWOHAND", "MESSY", "UNARMED_WEAPON", "SHOCKING"  ],
+    "qualities": [ [ "CUT", 5 ], [ "BUTCHER", -20 ] ]
+  },
+  
+  
+
+  
+    {
+    "id": "pcbm_runner",
+    "copy-from":"pcbm_face_snout",
+    "type": "BIONIC_ITEM",
+    "name": { "str": "FERA Long-Range PCBM" },
+    "description": "An alternate mode for the FERA quadraped system, this CBM ignores the raw power and armour of the original mode in exchange for excelling at long range travel, taking up less power and support the user against the repeated shocks of their own repetitive movement at the cost of being even less suited for combat. ",
+    "price": "25000 USD",
+    "difficulty": 17
+  },
+  {
+    "type": "bionic",
+    "id": "pcbm_runner",
+    "name": { "str": "FERA-L Endurance Mode" },
+    "occupied_bodyparts": [ [ "arm_r", 1 ], [ "leg_r", 1 ] , [ "foot_r", 0 ] ,[  "arm_l", 1 ], [ "leg_l", 1 ] , [ "foot_l", 0 ], [ "torso", 2 ], ],
+    "act_cost": "50 kJ",
+    "react_cost": "5 kJ",
+    "time": 3,
+	"required_bionics": [ "pcbm_sprint" ],
+    "env_protec": [ [ "arm_l", 5 ], [ "arm_r", 5 ], [ "leg_l", 5 ], [ "leg_r", 5 ]  ],   
+    "fake_item": "pcbm_proclaimer",
+    "description": "Once activated, the user is enveloped in a layer of rubber-like superalloy-infused substance, focused almost entirely on protecting against concussive shocks.",
+	"enchantments": [ "pcbm_gofast" ],
+	"can_uninstall": false,
+    "no_uninstall_reason": "The FERA-L systems are completly integrated with the base FERA systems, it only makes removing them more difficult.", 
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_WEAPON" ]
+  },
+
+  {
+    "type": "enchantment",
+    "id": "pcbm_golong",
+    "condition": "ACTIVE",
+	"mutations": [ "PCBM_quadspeed" ],
+    "ench_effects": [ { "effect": "pcbm_golong", "intensity": 1 } ]
+  },
+    {
+    "type": "mutation",
+    "id": "PCBM_quadspeed",
+    "name": { "str": "Enduring Speed" },
+    "description": "Debug",
+    "points": 0,
+	"player_display": false,
+	"valid": false, 
+	"purifiable": false,
+    "visibility": 10,
+    "ugliness": -8,
+    "armor": [ { "parts": "ALL", "bash": 12 } ],
+	"dodge_modifier" : -5,
+	"attackcost_modifier" : 1.8,
+	"stamina_regen_modifier": 2,
+	"max_stamina_modifier": 3.5,
+	"movecost_modifier" : 0.4, 
+	"movecost_flatground_modifier" : 0.4,
+	"movecost_obstacle_modifier" : 0.6,
+	"movecost_swim_modifier" : 0.9
+  },
+    {
+    "type": "GENERIC",
+    "id": "pcbm_proclaimer",
+    "weapon_category": [ "BIONIC_WEAPONRY", "FIST_WEAPONS" ],
+    "name": { "str": "Enduring paws" },
+    "description": "While not as powerful as any dedicated combat bionic, while encased, your limbs are fairly tough and have some power behind them.",
+    "weight": "100 g",
+    "to_hit": 2,
+    "color": "dark_gray",
+    "symbol": "K",
+    "material": [ "superalloy", "rubber" ],
+    "techniques": [ "RAPID", "WBLOCK_1" ],
+    "volume": "2250 ml",
+    "cutting": 2,
+	"bashing": 12,
+    "flags": [ "NO_UNWIELD", "NO_DROP", "UNBREAKABLE_MELEE", "TRADER_AVOID", "ALWAYS_TWOHAND", "UNARMED_WEAPON"  ]
+  }
+  
+  
+  
+]

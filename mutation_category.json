@@ -1,0 +1,24 @@
+[
+	{
+    "type": "mutation_category",
+    "id": "ROBOT",
+    "name": "Mechani",
+    "threshold_mut": "THRESH_ROBOT",
+    "mutagen_message": "Your flesh weakens you less",
+    "iv_message": "The purity of the machine increases",
+    "memorial_message": "Shutdown.",
+    "iv_min_mutations" : 1
+  },
+    {
+    "type": "mutation",
+    "id": "THRESH_ROBOT",
+    "name": { "str": "Mechanicorum" },
+    "points": 1,
+    "description": "You have risen above the scope of programming, beyond the reach of flesh, what could possibly await you?",
+    "valid": false,
+    "purifiable": false,
+    "can_only_heal_with": [ "pcbm_nanoheal", "pcbm_repairkit" ],
+	"types": [ "METABOLISM", "SLEEP", "HEALING" ],
+    "threshold": true
+  }
+ ]
