@@ -710,7 +710,7 @@
     {
     "type": "mutation",
     "id": "PCBM_digits",
-    "name": { "str": "Chrome Legs" },
+    "name": { "str": "Chrome Digitigrade Legs" },
     "points": 1,
 	"valid": false,
 	"purifiable": false,

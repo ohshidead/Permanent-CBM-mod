@@ -18,7 +18,7 @@
           { "id": ["overlay_mutation_pcbm_face_flat","overlay_worn_pcbm_flatface" ],"fg": 17, "rotates": false },
           { "id": "overlay_mutation_pcbm_robo_ears", "fg": 2, "rotates": false },
 		  { "id": ["overlay_mutation_pcbm_face_snout","overlay_wielded_pcbm_snoutface"], "fg": 1, "rotates": false },
-		  { "id": "pcbm_face_snout" , "fg": 28,  "rotates": false },		  
+		  { "id": "pcbm_face_snout" , "fg": 11,  "rotates": false },		  
 		  { "id": "overlay_mutation_pcbm_robo_fur", "fg": 3, "rotates": false },
 		  { "id": "overlay_mutation_pcbm_chestplate", "fg": 4, "rotates": false },
 		  { "id": "overlay_mutation_pcbm_robo_paws", "fg": 5, "rotates": false },		  
