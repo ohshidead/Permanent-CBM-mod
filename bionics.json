@@ -484,7 +484,7 @@
     "env_protec": [ [ "hand_l", 5 ], [ "hand_r", 5 ]  ],   
 	"enchantments": [ "PCBM_pawbs" ],
     "flags": [ "BIONIC_SHOCKPROOF"],
-	"canceled_mutations": [ "INSECT_ARMS", "INSECT_ARMS_OK", "ARACHNID_ARMS", "ARACHNID_ARMS_OK", "PAWS_LITTLE", "PAWS", "PAWS_LARGE", "ARM_TENTACLES", "ARM_TENTACLES_4", "ARM_TENTACLES_8"],	
+	"canceled_mutations": [ "INSECT_ARMS", "INSECT_ARMS_OK", "ARACHNID_ARMS", "ARACHNID_ARMS_OK", "PAWS_LITTLE", "PAWS", "PAWS_LARGE", "ARM_TENTACLES", "ARM_TENTACLES_4", "ARM_TENTACLES_8","PCBM_handy" ],	
 	"can_uninstall": false,
     "no_uninstall_reason": "Removing this PCBM would leave the patient entirely without hands.", 
     "included_bionics": ["pcbm_hand_holder"]
@@ -550,7 +550,7 @@
     "env_protec": [ [ "hand_l", 5 ], [ "hand_r", 5 ]  ],   
 	"enchantments": [ "PCBM_handy" ],
     "flags": [ "BIONIC_SHOCKPROOF"],
-	"canceled_mutations": [ "INSECT_ARMS", "INSECT_ARMS_OK", "ARACHNID_ARMS", "ARACHNID_ARMS_OK", "PAWS_LITTLE", "PAWS", "PAWS_LARGE", "ARM_TENTACLES", "ARM_TENTACLES_4", "ARM_TENTACLES_8",],	
+	"canceled_mutations": [ "INSECT_ARMS", "INSECT_ARMS_OK", "ARACHNID_ARMS", "ARACHNID_ARMS_OK", "PAWS_LITTLE", "PAWS", "PAWS_LARGE", "ARM_TENTACLES", "ARM_TENTACLES_4", "ARM_TENTACLES_8", "PCBM_pawbs"],	
 	"can_uninstall": false,
     "no_uninstall_reason": "Removing this PCBM would leave the patient entirely without hands.", 
     "included_bionics": ["pcbm_hand_holder"]

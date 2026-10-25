@@ -13,7 +13,7 @@ I can install two bionics that are clearly for the same spot??
 Id rather you didn't but cant stop you until some code changes (Hit me up if pull #7957 goes through!). If the bionic would conflict with another the game should warn you that it will conflict with the mutation that bionic provides so don't do that.
 For the record the conflicting bionic options to choose between are:
 
-Facial Replacement -x- Facial Replacement - Extended
+Facial Replacement - Extended -x- Facial Replacement
 Digital Antennae  -x- Digital Headset
 Bionic Chestplate -x- Bio-Kinetic Chestwraps
 Metal Fur Coat -x- Poly-metal Skin
