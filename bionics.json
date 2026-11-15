@@ -1026,8 +1026,8 @@
 	"mutations": [ "THRESH_ROBOT" ],
     "ench_effects": [ { "effect": "pcbm_nosleep", "intensity": 1 } ],
 	"values": [
-      { "value": "METABOLISM", "multiply": 0.01 },
-      { "value": "THIRST", "multiply": 0.2 },
+      { "value": "METABOLISM", "multiply": -0.99 },
+      { "value": "THIRST", "multiply": -0.2 },
       { "value": "ATTACK_COST", "multiply": -0.10 },
       { "value": "MOVE_COST", "multiply": -0.05 },
       { "value": "MANA_CAP", "multiply": -0.5 },
